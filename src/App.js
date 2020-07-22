@@ -1,11 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
+import Nav from './components/Nav/index'
+
 function App() {
     return (
         <Router>
             <div>
-                <h1>Hello there!</h1>
+                <Nav />
             </div>
         </Router>
     )

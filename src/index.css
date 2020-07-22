@@ -1,0 +1,17 @@
+html {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(221, 221, 221);
+    min-height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+a:hover {
+    text-decoration: none;
+}
+

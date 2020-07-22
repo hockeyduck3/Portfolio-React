@@ -1,0 +1,75 @@
+.navbar {
+    background-color: #444 !important;
+    padding: 0;
+    border-bottom: 2px solid black;
+}
+
+.navbar-brand {
+    font-family: 'Yellowtail', cursive;
+    padding: 20px 10px;
+    margin-left: 5%;
+    font-size: 30px;
+}
+
+.nav-link {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}
+
+.navbar-nav, .nav-link, button {
+    margin-right: 25px;
+}
+
+button:focus {
+    outline: #444 3px auto;
+}
+
+.nav-link {
+    transition: ease-out 0.3s;
+}
+
+.nav-link:hover {
+    transition: ease-in 0.3s;
+}
+
+/* Tablets */
+@media(max-width: 991px) {
+    .navbar-nav, .nav-link {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navbar-brand {
+        padding: 25px 10px;
+    }
+
+    .nav-link{
+        margin: 5px 48px;
+    }
+
+    button {
+        padding-left: 5%;
+        font-size: 20px;
+    }
+}
+
+/* Modile */
+@media(max-width: 640px) {
+    .nav-link{
+        margin: 5px 17px;
+    }
+}
+
+/* iPhone 5/SE */
+@media (max-width: 375px) {
+    button {
+        margin-right: 20px;
+    }
+
+    .nav-link {
+        margin: 5px 10px;
+        font-size: 18px;
+    }
+}
