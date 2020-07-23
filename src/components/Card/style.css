@@ -1,0 +1,26 @@
+.card {
+    border: 3px solid #444;
+    border-radius: 0.5rem;
+    margin: 45px 5%;
+    box-shadow: 2px 9px 10px -3px #444;
+}
+
+.card-body {
+    padding: 1.04rem;
+}
+
+.cardHeader {
+    text-align: center;
+}
+
+h2 {
+    font-size: 55px;
+    font-family: 'Yellowtail', cursive;
+}
+
+hr {
+    background-color: #444;
+    border: none;
+    height: 3px;
+    margin-bottom: 1.5rem;
+}
