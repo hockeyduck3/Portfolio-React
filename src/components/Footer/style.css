@@ -1,11 +1,11 @@
 footer {
     background-color: #444;
-    border-top: 3px solid rgb(145, 145, 145);
+    border-top: 2px solid black;
     color: white;
     display: flex;
     flex-direction: row;
     font-size: 20px;
-    height: 4rem;
+    height: 3rem;
     justify-content: center;
     margin-top: auto;
     text-align: center;
@@ -48,9 +48,29 @@ footer p{
 }
 
 #github:hover {
-    color: rgb(179, 179, 179);
+    color: rgb(48, 48, 48);
 }
 
 #linkedin:hover {
     color: #0077B5;
+}
+
+@media (max-width: 640px) {
+    footer {
+        height: 5rem;
+        font-size: 16px;
+        flex-direction: column;
+    }
+
+    .footerSocial {
+        display: none;
+    }
+    
+    #madeWith, #copy {
+        margin: 0; 
+    }
+    
+    #copy {
+        float:  none;
+    }
 }
