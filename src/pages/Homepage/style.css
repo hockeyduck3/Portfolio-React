@@ -82,4 +82,8 @@ a:hover {
     .text, #btn1 {
         font-size: 15px;
     }
+
+    #helloThereGif {
+        width: 100%;
+    }
 }
