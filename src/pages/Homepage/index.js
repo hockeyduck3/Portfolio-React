@@ -34,7 +34,7 @@ class Homepage extends Component {
             // Card will slide in from the left
             card.classList.replace('animate__backOutRight', 'animate__backInLeft');
 
-            // Wait 5 seconds
+            // Wait 6 seconds
             setTimeout(() => {
                 // Have the card slide out to the right again
                 card.classList.add('animate__animated', 'animate__backOutRight');
@@ -52,7 +52,7 @@ class Homepage extends Component {
                     // And the Github link will fade back in
                     ghLink.classList.replace('animate__fadeOut', 'animate__fadeIn');
                 }, 1200);
-            }, 5000);
+            }, 6000);
         }, 1200);
     }
 
