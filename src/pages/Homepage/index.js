@@ -8,6 +8,10 @@ import Card from '../../components/Card/index';
 import './style.css';
 
 class Homepage extends Component {
+    helloThere = () => {
+
+    }
+
     render() {
         return (
             <Container fluid='-fluid'>
@@ -29,6 +33,10 @@ class Homepage extends Component {
                         <p className='text'>Or feel free to text me at 801-867-8728</p>
                     </div>
                 </Card>
+                
+                <div id='githubLink'>
+                    <a href='https://github.com/hockeyduck3/Portfolio' target='_blank'>Click here for my website's Repo <i class='fab fa-github'></i></a>
+                </div>
             </Container>
         )
     }

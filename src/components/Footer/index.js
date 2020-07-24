@@ -9,9 +9,9 @@ function Footer() {
             <p id='madeWith'>Made with &hearts; in SLC.</p>
 
             <div className='footerSocial'>
-                {/* LinkedIn Link */}
-                <a id='linkedin' href='https://linkedin.com/in/lj-spencer' target='_blank' rel='noopener noreferrer'>
-                    <i className='fab fa-linkedin'></i>
+                {/* Twitter Link */}
+                <a href='https://twitter.com/ljspencer97' target='_blank' rel='noopener noreferrer'>
+                    <i id='twitter' className='fab fa-twitter-square'></i>
                 </a>
 
                 {/* Github Link */}
@@ -19,9 +19,9 @@ function Footer() {
                     <i className='fab fa-github-square'></i>
                 </a>
 
-                {/* Twitter Link */}
-                <a href='https://twitter.com/ljspencer97' target='_blank' rel='noopener noreferrer'>
-                    <i id='twitter' className='fab fa-twitter-square'></i>
+                {/* LinkedIn Link */}
+                <a id='linkedin' href='https://linkedin.com/in/lj-spencer' target='_blank' rel='noopener noreferrer'>
+                    <i className='fab fa-linkedin'></i>
                 </a>
             </div>
         </footer>
