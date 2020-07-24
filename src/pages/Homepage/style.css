@@ -51,6 +51,20 @@ a:hover {
     text-align: center;
 }
 
+#helloThereDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#helloThereGif {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 2px 6px 15px -3px #444;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
 
 /* Mobile */
 @media (max-width: 640px) {
