@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import Resume from '../../PDF/LJ-Spencer-Resume-2020.pdf';
 import './style.css';
@@ -30,8 +30,8 @@ function Nav() {
                 <ul className='navbar-nav ml-auto'>
 
                     {/* About */}
-                    <li className={window.location.pathname === '/' ? 'nav-item active' : 'nav-item'}>
-                        <Link to='/' className='nav-link'>About</Link>
+                    <li className='nav-item'>
+                        <NavLink activeClassName='active' exact to='/' className='nav-link'>About</NavLink>
                     </li>
 
                     {/* Portfolio Link */}
@@ -45,8 +45,8 @@ function Nav() {
                     </li>
 
                     {/* Contact Link */}
-                    <li className={window.location.pathname === '/Contact' ? 'nav-item active' : 'nav-item'}>
-                        <Link to='/Contact' className='nav-link'>Contact</Link>
+                    <li className='nav-item'>
+                        <NavLink to='/Contact' activeClassName='active' className='nav-link'>Contact</NavLink>
                     </li>
                 </ul>
             </div>
