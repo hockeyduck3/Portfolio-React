@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Resume from '../../PDF/LJ-Spencer-Resume-2020.pdf';
 import './style.css';
 
 function Nav() {
@@ -40,7 +41,7 @@ function Nav() {
 
                     {/* Resume Link */}
                     <li className={window.location.pathname === '/Resume' ? 'nav-item active' : 'nav-item'}>
-                        <Link to='/Resume' className='nav-link'>Resume</Link>
+                        <a href={Resume} className='nav-link' target='_blank' rel='noopener noreferrer'>Resume</a>
                     </li>
 
                     {/* Contact Link */}
