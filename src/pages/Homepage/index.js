@@ -13,6 +13,10 @@ class Homepage extends Component {
         helloThere: false
     }
 
+    componentDidMount() {
+        document.title = 'LJ\'s | Homepage'
+    }
+
     helloThereFunc = () => {
         const card = document.getElementById('card');
         const ghLink = document.getElementById('githubLink');
