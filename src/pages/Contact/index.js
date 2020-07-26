@@ -55,9 +55,9 @@ class Contact extends Component {
         
         // If name contains any special characters
         else if (name.match(/[!@#$%^&*(),.?":{}|<>]/)) {
-            this.showError('name', '* Cannot contain special characters.')
+            this.showError('name', '* Cannot contain special characters.');
+            anyErrors = true;
         }
-
 
         // If email is blank
         if (email === '') {
@@ -65,9 +65,18 @@ class Contact extends Component {
             anyErrors = true;
         }
 
+        // Email regex from: http://regexlib.com/Search.aspx?k=email
+
+        // eslint-disable-next-line
+        else if (!email.match(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/)) {
+            this.showError('email', 'Not valid email address.');
+            anyErrors = true;
+        }
+
         // If message is blank
         if (message === '') {
             this.showError('message', defaultString);
+            anyErrors = true;
         }
 
         // If there are no errors, then run the sendEmail function
