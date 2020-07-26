@@ -3,7 +3,7 @@ label {
     margin-bottom: 10px;
 }
 
-label, .btn {
+label, .btn, #messageSent, .axiosError {
     font-family: 'Kaushan Script', cursive;
 }
 
@@ -35,6 +35,25 @@ label, .btn {
 
 .form-control:focus {
     border-color: black;
+}
+
+#messageSent {
+    color: green;
+    font-size: 50px;
+    text-align: center;
+}
+
+.axiosError {
+    color: red;
+    display: inline;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+#emailText {
+    font-size: 13px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .hide {
