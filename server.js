@@ -4,7 +4,7 @@ const router = require("express").Router();
 
 const server = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 server.use(express.urlencoded({ extended: true }));
 server.use(express.json);
