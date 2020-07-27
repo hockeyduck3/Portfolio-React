@@ -45,7 +45,6 @@ class Portfolio extends Component {
     }
 
     displayBigView = () => {
-        
     }
 
     render() {
@@ -56,6 +55,7 @@ class Portfolio extends Component {
                     <Card title={this.state.title} id='portfolio'>
                         <Container>
                             <div className='row mainSection'>
+                                {/* Quiz Game */}
                                 <PortfolioCard 
                                     data='quiz'
                                     img='./images/Quiz.png'
@@ -63,6 +63,71 @@ class Portfolio extends Component {
                                     name='Quiz Game!'
                                     handleClick={this.handleClick}
                                 />
+
+                                {/* Password Maker */}
+                                <PortfolioCard 
+                                    data='password'
+                                    img='./images/Password.png'
+                                    alt='Password Maker'
+                                    name='Password Maker'
+                                    handleClick={this.handleClick}
+                                />
+
+                                {/* Weather App */}
+                                <PortfolioCard 
+                                    data='weather'
+                                    img='./images/Weather.png'
+                                    alt='Weather App'
+                                    name='Weather App'
+                                    handleClick={this.handleClick}
+                                />
+
+                                {/* COVID-19 Info */}
+                                <PortfolioCard 
+                                    data='covid'
+                                    img='./images/Covid.png'
+                                    alt='COVID-19 Info App'
+                                    name='COVID-19 Into'
+                                    handleClick={this.handleClick}
+                                />
+
+                                {/* Note Taker */}
+                                <PortfolioCard 
+                                    data='note'
+                                    img='./images/Note-Taker.jpg'
+                                    alt='Simple Note Taker App'
+                                    name='Note Taker'
+                                    handleClick={this.handleClick}
+                                />
+
+                                {/* Employee Management */}
+                                <PortfolioCard 
+                                    data='employeeManage'
+                                    img='./images/Employee-Management.jpg'
+                                    alt='Employee Management App'
+                                    name='Employee Management'
+                                    handleClick={this.handleClick}
+                                />
+
+                                {/* Eat-Dat-Burger */}
+                                <PortfolioCard 
+                                    data='burger'
+                                    img='./images/Eat-Dat-Burger.jpg'
+                                    alt='Eat-Dat-Burger App'
+                                    name='Eat-Dat-Burger!'
+                                    handleClick={this.handleClick}
+                                />
+
+                                {/* Poke-Build */}
+                                <PortfolioCard 
+                                    data='poke'
+                                    img='./images/Poke-Build.jpg'
+                                    alt='Poke-Build App'
+                                    name='Poke-Build'
+                                    handleClick={this.handleClick}
+                                />
+
+
                             </div>
                         </Container>
                     </Card>
