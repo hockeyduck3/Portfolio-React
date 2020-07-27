@@ -1,6 +1,6 @@
 const express = require('express');
-const path = require("path");
-const router = require("express").Router();
+const path = require('path');
+const router = require('express').Router();
 
 const server = express();
 
@@ -14,9 +14,9 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 router.use(function(req, res) {
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+    res.sendFile(path.join(__dirname, './client/build/index.html'));
 });
 
 server.listen(PORT, () => {
     console.log(`Listening on localhost:${PORT}`)
-})
+});
