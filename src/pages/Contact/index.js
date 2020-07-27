@@ -200,7 +200,7 @@ class Contact extends Component {
         return (
             <Container fluid='-fluid'>
                 {!status ? (
-                    <Card title={this.state.title}>
+                    <Card title={this.state.title} id='contact'>
                         <div className='mainCard'>
                                 <form id='my-form' onSubmit={this.validateFunc}>
 
@@ -254,7 +254,7 @@ class Contact extends Component {
                     </Card>
 
                 ) : (
-                    <Card title='messageSent'>
+                    <Card title='messageSent' id='contact'>
                         <p id='messageSent'>Message Sent!</p>
                     </Card>
                 )}

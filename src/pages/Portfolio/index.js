@@ -3,10 +3,16 @@ import React, { Component } from 'react';
 import Container from '../../components/Container/index';
 import Card from '../../components/Card/index';
 
+import './portfolio.css';
+
 class Portfolio extends Component {
     state = {
         title: 'My Portfolio',
         bigView: false,
+    }
+
+    componentDidMount() {
+        document.title = 'LJ\'s | Portfolio';
     }
 
     handleClick = () => {
@@ -18,7 +24,7 @@ class Portfolio extends Component {
         return (
             <Container fluid='-fluid'>
                 {!bigView ? (
-                    <Card title={this.state.title}>
+                    <Card title={this.state.title} id='portfolio'>
                         <h1>Hello there!</h1>
                     </Card>
                 ) : (

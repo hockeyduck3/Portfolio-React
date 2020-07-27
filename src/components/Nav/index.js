@@ -35,8 +35,8 @@ function Nav() {
                     </li>
 
                     {/* Portfolio Link */}
-                    <li className={window.location.pathname === '/Portfolio' ? 'nav-item active' : 'nav-item'}>
-                        <Link to='/Portfolio' className='nav-link'>Portfolio</Link>
+                    <li className='nav-item'>
+                        <NavLink activeClassName='active' to='/Portfolio' className='nav-link'>Portfolio</NavLink>
                     </li>
 
                     {/* Resume Link */}
@@ -46,7 +46,7 @@ function Nav() {
 
                     {/* Contact Link */}
                     <li className='nav-item'>
-                        <NavLink to='/Contact' activeClassName='active' className='nav-link'>Contact</NavLink>
+                        <NavLink activeClassName='active' to='/Contact' className='nav-link'>Contact</NavLink>
                     </li>
                 </ul>
             </div>
