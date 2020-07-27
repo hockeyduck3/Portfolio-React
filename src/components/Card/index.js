@@ -1,9 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './style.css';
 
 function Card(props) {
-    if (props.title !== 'messageSent') {
+    if (props.title === 'bigView') {
+        return (
+            <div className='card' id='card'>
+                <div className='card-body'>
+                    <Link to='' className="backBtn" onClick={props.backClick}><i class="fas fa-chevron-left"></i></Link>
+
+                    <h2 className='cardTitle' id={props.id + 'Title'}>{props.bigTitle}</h2>
+    
+                    <hr className='line'></hr>
+    
+                    {props.children}
+                </div>
+            </div>
+        )
+    }
+    
+    else if (props.title !== 'messageSent') {
         return (
             <div className='card' id='card'>
                 <div className='card-body'>
@@ -15,7 +32,9 @@ function Card(props) {
                 </div>
             </div>
         )
-    } else {
+    } 
+    
+    else {
         return (
             <div className='card' id='card'>
                 <div className='card-body'>    
