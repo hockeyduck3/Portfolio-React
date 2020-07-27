@@ -134,15 +134,19 @@ class Portfolio extends Component {
     displayBigView = () => {
         const card = document.getElementById('card').classList;
 
-        card.add('animate__animated', 'animate__zoomOut');
+        card.add('animate__animated', 'animate__rubberBand');
 
         setTimeout(() => {
             this.setState({
                 bigView: true
             });
 
-            card.replace('animate__zoomOut', 'animate__zoomIn');
-        }, 600);
+            window.scrollTo(0, 0);
+
+            setTimeout(() => {
+                card.remove('animate__animated', 'animate__rubberBand');
+            }, 600);
+        }, 300);
     }
 
     displayPreview = event => {
@@ -150,19 +154,17 @@ class Portfolio extends Component {
 
         const card = document.getElementById('card').classList;
 
-        card.replace('animate__zoomIn', 'animate__zoomOut');
+        card.add('animate__animated', 'animate__rubberBand');
 
         setTimeout(() => {
             this.setState({
                 bigView: false
             });
 
-            card.replace('animate__zoomOut', 'animate__zoomIn');
-
             setTimeout(() => {
-                card.remove('animate__animated', 'animate__zoomIn');
+                card.remove('animate__animated', 'animate__rubberBand');
             }, 600);
-        }, 600);
+        }, 300);
     }
 
     render() {
