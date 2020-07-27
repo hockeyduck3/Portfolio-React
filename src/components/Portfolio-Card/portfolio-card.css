@@ -1,0 +1,31 @@
+.project img {
+    border-top: 3px solid #444;
+    border-left: 3px solid #444;
+    border-right: 3px solid #444;
+    border-radius: 10px 10px 0px 0;
+    width: 100%;
+}
+
+.project p {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.project button {
+    border: none;
+    background-color: transparent;
+}
+
+.project button:focus {
+    outline: none;
+}
+
+.project {
+    transition: ease-out 0.1s;
+}
+
+.project:hover {
+    transform: scale(1.03);
+}
