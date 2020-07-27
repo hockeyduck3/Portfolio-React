@@ -38,11 +38,14 @@ class Portfolio extends Component {
 
                 this.displayBigView();
                 break;
+
+            default:
+                break;
         }
     }
 
     displayBigView = () => {
-
+        
     }
 
     render() {

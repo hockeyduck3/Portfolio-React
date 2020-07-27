@@ -16,7 +16,7 @@
     font-size: 20px;
 }
 
-.navbar-nav, .nav-link, button {
+.navbar-nav, .nav-link, #navbarBtn {
     margin-right: 25px;
 }
 
