@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === 'production') {
     server.use(express.static('client/build'));
 }
 
-router.use(function(req, res) {
+router.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './client/build/index.html'));
 });
 
