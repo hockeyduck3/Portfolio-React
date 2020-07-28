@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.63697e98.chunk.css",
+    "main.js": "/static/js/main.7290d7d9.chunk.js",
+    "main.js.map": "/static/js/main.7290d7d9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6b3488d1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6b3488d1.js.map",
+    "static/js/2.80cf72c5.chunk.js": "/static/js/2.80cf72c5.chunk.js",
+    "static/js/2.80cf72c5.chunk.js.map": "/static/js/2.80cf72c5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8171f424c4199a211ee21ac1608f902c.js": "/precache-manifest.8171f424c4199a211ee21ac1608f902c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.63697e98.chunk.css.map": "/static/css/main.63697e98.chunk.css.map",
+    "static/js/2.80cf72c5.chunk.js.LICENSE.txt": "/static/js/2.80cf72c5.chunk.js.LICENSE.txt",
+    "static/media/LJ-Spencer-Resume-2020.pdf": "/static/media/LJ-Spencer-Resume-2020.922cc322.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b3488d1.js",
+    "static/js/2.80cf72c5.chunk.js",
+    "static/css/main.63697e98.chunk.css",
+    "static/js/main.7290d7d9.chunk.js"
+  ]
+}
