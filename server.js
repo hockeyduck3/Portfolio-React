@@ -5,9 +5,6 @@ const server = express();
 
 const PORT = process.env.PORT || 3001;
 
-server.use(express.urlencoded({ extended: true }));
-server.use(express.json);
-
 server.use(express.static(path.join(__dirname, 'client/build')));
 
 server.get('*', (req, res) => {
