@@ -3,15 +3,19 @@ const path = require('path');
 
 const server = express();
 
-// Serve the static files from the React server
-server.use(express.static(path.join(__dirname, 'client/build')));
+const PORT = process.env.PORT || 3001;
 
-// Handles any requests that don't match the ones above
-server.get('*', (req,res) =>{
-    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+server.use(express.urlencoded({ extended: true }));
+server.use(express.json);
+
+if (process.env.NODE_ENV === 'production') {
+    server.use(express.static('client/build'));
+}
+
+server.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './client/build/index.html'));
 });
 
-const port = process.env.PORT || 3001;
-server.listen(port);
-
-console.log('App is listening on port ' + port);
+server.listen(PORT, () => {
+    console.log(`Listening on localhost:${PORT}`);
+});
