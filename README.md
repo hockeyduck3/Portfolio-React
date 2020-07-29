@@ -4,7 +4,7 @@
 
 ## Description
 
-For this project I re-built my personal website using [React](https://reactjs.org/). Besides React, I'm also using the [animate.css](https://animate.style/) for all of my website's animations. I'm also using [Bootstrap](https://getbootstrap.com/), and regular CSS and Javscript. If you wanna see my previous Portfolio repo [click here](https://github.com/hockeyduck3/Portfolio-retired)
+For this project I re-built my personal website using [React](https://reactjs.org/). Besides React, I'm also using the [animate.css](https://animate.style/) for all of my website's animations. I'm also using [Bootstrap](https://getbootstrap.com/), and regular CSS and Javscript. If you wanna see my previous Portfolio repo [click here](https://github.com/hockeyduck3/Portfolio-retired).
 
 This website is currently live at [ljspencer.dev](https://www.ljspencer.dev/)!
 
