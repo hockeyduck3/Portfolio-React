@@ -8,7 +8,7 @@ function Card(props) {
         return (
             <div className='card' id='card'>
                 <div className='card-body'>
-                    <Link to='' className="backBtn" onClick={props.backClick}><i className="fas fa-chevron-left"></i></Link>
+                    <Link to='' className="backBtn" onClick={props.backClick}><i className='fas fa-chevron-left'></i></Link>
 
                     <h2 className='cardTitle' id={props.id + 'Title'}>{props.bigTitle}</h2>
     

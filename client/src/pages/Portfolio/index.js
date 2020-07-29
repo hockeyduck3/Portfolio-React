@@ -34,7 +34,7 @@ class Portfolio extends Component {
                     bigAlt: 'My Quiz Game',
                     liveLink: 'https://hockeyduck3.github.io/Quiz-Game/',
                     repoLink: 'https://github.com/hockeyduck3/Quiz-Game',
-                    marginTop: '30px',
+                    marginTop: '14px',
                     description: 'This is a quick and simple quiz game that I made for Full Stack Web Course. Using just regular HTML, Bootstrap, and vanilla Javascript. The point of the game is simple, you have 60 seconds to answer all 10 questions! For every question you get right you\'ll recieve 5 points, but if you get a question wrong you\'ll love 5 seconds off the timer. Good luck and have fun!'
                 });
 
@@ -118,7 +118,7 @@ class Portfolio extends Component {
                     bigAlt: 'My Eat-Dat-Burger App',
                     liveLink: 'https://eat-dat-burger-website.herokuapp.com/',
                     repoLink: 'https://github.com/hockeyduck3/Eat-Dat-Burger',
-                    marginTop: '45px',
+                    marginTop: '22px',
                     description: 'For this project I had to go and make a simple burger eating website that utilized a SQL database. The website itself is using Handlebars for HTML handling, Bootstrap, jQuery, Express, and JawsDB. The main point of this website is simple, you can add a burger to the "Burgers to Devour" list, and then once you click on that burger it will move over to the "Devoured burgers" list! All of this is saved within a JawsDB SQL server.'
                 });
 
@@ -143,7 +143,7 @@ class Portfolio extends Component {
     displayBigView = () => {
         const card = document.getElementById('card').classList;
 
-        card.add('animate__animated', 'animate__rubberBand');
+        card.add('animate__animated', 'animate__fadeOut');
 
         setTimeout(() => {
             this.setState({
@@ -151,11 +151,12 @@ class Portfolio extends Component {
             });
 
             window.scrollTo(0, 0);
+            card.replace('animate__fadeOut', 'animate__fadeIn');
 
             setTimeout(() => {
-                card.remove('animate__animated', 'animate__rubberBand');
-            }, 600);
-        }, 300);
+                card.remove('animate__animated', 'animate__fadeIn');
+            }, 300);
+        }, 1600);
     }
 
     displayPreview = event => {
@@ -163,17 +164,19 @@ class Portfolio extends Component {
 
         const card = document.getElementById('card').classList;
 
-        card.add('animate__animated', 'animate__rubberBand');
+        card.add('animate__animated', 'animate__fadeOut');
 
         setTimeout(() => {
             this.setState({
                 bigView: false
             });
 
+            card.replace('animate__fadeOut', 'animate__fadeIn');
+
             setTimeout(() => {
-                card.remove('animate__animated', 'animate__rubberBand');
-            }, 600);
-        }, 300);
+                card.remove('animate__animated', 'animate__fadeIn');
+            }, 300);
+        }, 1600);
     }
 
     render() {
