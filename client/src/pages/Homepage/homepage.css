@@ -12,7 +12,7 @@
     color: black;
     font-size: 17px;
     line-height: 1.6em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Domine', serif;
     font-weight: 100;
 }
 
@@ -44,6 +44,14 @@ a {
 a:hover {
     color: rgb(126, 126, 126);
     transition: ease-in 0.2s;
+}
+
+.homepageLinks {
+    color: dodgerblue;
+}
+
+.homepageLinks:hover {
+    color: rgb(9, 87, 165);
 }
 
 #githubLink {
