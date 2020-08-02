@@ -5,8 +5,9 @@ function FormGroup(props) {
         return (
             <div className='form-group'>
                 <label className='col-sm-12 control-label' htmlFor={props.name}>
-                    {props.label} <span id={props.name + 'Error'} className='hide'>{props.errorMessage}</span>
+                    {props.label}
                 </label>
+                <p id={props.name + 'Error'}></p>
     
                 <div id={props.name + 'Col'} className='col-md-10'>
                     {props.children}

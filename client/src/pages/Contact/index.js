@@ -23,7 +23,9 @@ class Contact extends Component {
     inputFunc = event => {
         const { name, value } = event.target;
 
-        if (event.target.classList.contains('errorTrue')) {
+        const errorCheck = document.getElementById(name + 'Error').classList
+
+        if (errorCheck.contains('errorTrue')) {
             this.removeError(name);
         }
         
@@ -86,36 +88,41 @@ class Contact extends Component {
     }
 
     showError = (name, text) => {
-        // Set the text of the error element to the text parameter
-        document.getElementById(name + 'Error').innerHTML = text;
+        const nameVal = document.getElementById(name);
+        const nameError = document.getElementById(name + 'Error');
+        const nameCol = document.getElementById(name + 'Col');
 
-        // Play the animations fro the error element
-        document.getElementById(name + 'Error').classList.add('animate__animated', 'animate__fadeIn');
-        document.getElementById(name + 'Error').classList.remove('hide');
+        // Set the text of the error element to the text parameter
+        nameError.innerHTML = text;
+
+        // Play the animations from the error element and add the errorTrue class
+        if (!nameError.classList.contains('errorTrue')) {
+            nameError.classList.add('animate__animated', 'animate__fadeIn', 'errorTrue');
+        }
 
         // Play the shake animation on the element with the error, and change the border color to red
-        document.getElementById(name + 'Col').classList.add('animate__animated', 'animate__shakeX');
-        document.getElementById(name).style.borderColor = 'red';
-
-        // Finally add this to the classList to easily see and remove any error styling
-        document.getElementById(name).classList.add('errorTrue');
+        nameCol.classList.add('animate__animated', 'animate__shakeX');
+        nameVal.style.borderColor = 'red';
 
         // Remove the animation classes after 600 milliseconds so they can be played again
         setTimeout(() => {
-            document.getElementById(name + 'Error').classList.remove('animate__animated', 'animate__fadeIn');
-            document.getElementById(name + 'Col').classList.remove('animate__animated', 'animate__shakeX');
+            nameError.classList.remove('animate__animated', 'animate__fadeIn');
+            nameCol.classList.remove('animate__animated', 'animate__shakeX');
         }, 600);
     }
 
     removeError = name => {
-        document.getElementById(name).classList.remove('errorTrue');
-        document.getElementById(name + 'Error').classList.add('animate__animated', 'animate__fadeOut');
-        document.getElementById(name).style.borderColor = 'black';
+        const nameVal = document.getElementById(name);
+        const nameError = document.getElementById(name + 'Error');
+
+        nameVal.classList.remove('errorTrue');
+        nameError.classList.add('animate__animated', 'animate__fadeOut');
+        nameVal.style.borderColor = 'black';
 
         // Remove the fadeOut animation and re-add the class of hide after 500 milliseconds
         setTimeout(() => {
-            document.getElementById(name + 'Error').classList.remove('animate__animated', 'animate__fadeOut');
-            document.getElementById(name + 'Error').classList.add('hide');
+            nameError.classList.remove('animate__animated', 'animate__fadeOut');
+            nameError.innerHTML = '';
         }, 500);
     }
 
@@ -165,7 +172,6 @@ class Contact extends Component {
 
                 setTimeout(() => {
                     card.remove('animate__animated', 'animate__flipInY');
-
                 }, 1000);
             }, 1000);
         }, 2500);
@@ -173,18 +179,15 @@ class Contact extends Component {
 
     emailFail = () => {
         const card = document.getElementById('card').classList;
-
         const error = document.querySelector('.axiosError').classList;
 
         card.replace('animate__bounceOutUp', 'animate__bounceInDown');
 
-        error.remove('hide');
         setTimeout(() => {
             card.remove('animate__animated', 'animate__bounceInDown');
         }, 1000);
 
         setTimeout(() => {
-
             error.add('animate__animated', 'animate__fadeOut');
             
             setTimeout(() => {

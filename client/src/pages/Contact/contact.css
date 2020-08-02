@@ -1,10 +1,14 @@
 label {
+    display: inline;
     font-size: 20px;
-    margin-bottom: 10px;
 }
 
-label, .btn, #messageSent, .axiosError {
+label, .btn, #messageSent, .axiosError, #nameError, #emailError, #messageError {
     font-family: 'Kaushan Script', cursive;
+}
+
+.form-control {
+    margin-top: 15px;
 }
 
 .btn {
@@ -16,6 +20,7 @@ label, .btn, #messageSent, .axiosError {
 
 #nameError, #emailError, #messageError {
     color: red;
+    display: inline;
     font-size: 16px;
 }
 
