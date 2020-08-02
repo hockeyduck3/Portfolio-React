@@ -143,7 +143,7 @@ class Portfolio extends Component {
     displayBigView = () => {
         const card = document.getElementById('card').classList;
 
-        card.add('animate__animated', 'animate__fadeOut');
+        card.add('animate__animated', 'animate__rubberBand');
 
         setTimeout(() => {
             this.setState({
@@ -151,12 +151,11 @@ class Portfolio extends Component {
             });
 
             window.scrollTo(0, 0);
-            card.replace('animate__fadeOut', 'animate__fadeIn');
 
             setTimeout(() => {
-                card.remove('animate__animated', 'animate__fadeIn');
+                card.remove('animate__animated', 'animate__rubberBand');
             }, 300);
-        }, 1600);
+        }, 300);
     }
 
     displayPreview = event => {
@@ -176,7 +175,7 @@ class Portfolio extends Component {
             setTimeout(() => {
                 card.remove('animate__animated', 'animate__fadeIn');
             }, 300);
-        }, 1600);
+        }, 600);
     }
 
     render() {
