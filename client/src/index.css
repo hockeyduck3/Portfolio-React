@@ -1,9 +1,9 @@
 html, body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
-    overflow-x: hidden;
     background-color: rgb(221, 221, 221);
 }
 
