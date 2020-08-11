@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import OnImagesLoaded from 'react-on-images-loaded';
 
 import Container from '../../components/Container/index';
-
 import Card from '../../components/Card/index';
 
 import './homepage.css';
@@ -69,7 +69,13 @@ class Homepage extends Component {
                     <div className='mainCard'>
                         {!helloThere ? (
                             <div>
-                                <img id='profilePic' src='./images/Profile-Pic.jpg' alt="LJ holding his sister's dog Teeny" />
+                                <OnImagesLoaded
+                                    onLoaded={() => document.getElementById('profilePic').classList.add('animate__animated', 'animate__flipInY')}
+                                    onTimeout={() => document.getElementById('profilePic').classList.add('animate__animated', 'animate__flipInY')}
+                                    timeout={5000}
+                                >
+                                    <img id='profilePic' src='./images/Profile-Pic.jpg' alt="LJ holding his sister's dog Teeny" />
+                                </OnImagesLoaded>
 
                                 <p className='text'> <button id='btn1' onClick={this.helloThereFunc}>Hello there!</button> My name is LJ <span role='img' aria-label='Smiling Emoji'>😁</span> and the Chihuahua in the picture with me is my sister's dog Tyne! (Pronounced Teeny) </p>
         
