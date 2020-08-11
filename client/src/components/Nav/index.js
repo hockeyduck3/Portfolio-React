@@ -40,7 +40,7 @@ function Nav() {
                     </li>
 
                     {/* Resume Link */}
-                    <li className={window.location.pathname === '/Resume' ? 'nav-item active' : 'nav-item'}>
+                    <li className='nav-item'>
                         <a href={Resume} className='nav-link' target='_blank' rel='noopener noreferrer'>Resume</a>
                     </li>
 
