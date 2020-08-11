@@ -152,7 +152,7 @@ class Portfolio extends Component {
                 bigView: true
             });
 
-            window.scrollTo(0, 0);
+            document.querySelector('body').scrollTo(0,0);
 
             setTimeout(() => {
                 card.remove('animate__animated', 'animate__rubberBand');
