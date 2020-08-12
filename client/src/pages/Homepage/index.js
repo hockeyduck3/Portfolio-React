@@ -70,11 +70,14 @@ class Homepage extends Component {
                         {!helloThere ? (
                             <div>
                                 <OnImagesLoaded
-                                    onLoaded={() => document.getElementById('profilePic').classList.add('animate__animated', 'animate__flipInY')}
+                                    onLoaded={() => {
+                                        document.getElementById('profilePic').style.visibility = 'visible';
+                                        document.getElementById('profilePic').classList.add('animate__animated', 'animate__flipInY', 'animate__delay-0.5s');
+                                    }}
                                     onTimeout={() => document.getElementById('profilePic').classList.add('animate__animated', 'animate__flipInY')}
                                     timeout={5000}
                                 >
-                                    <img id='profilePic' src='./images/Profile-Pic.jpg' alt="LJ holding his sister's dog Teeny" />
+                                    <img id='profilePic' src='./images/Profile-Pic.jpg' alt="LJ holding his sister's dog Teeny" style={{visibility: 'hidden'}} />
                                 </OnImagesLoaded>
 
                                 <p className='text'> <button id='btn1' onClick={this.helloThereFunc}>Hello there!</button> My name is LJ <span role='img' aria-label='Smiling Emoji'>😁</span> and the Chihuahua in the picture with me is my sister's dog Tyne! (Pronounced Teeny) </p>

@@ -106,7 +106,7 @@ class Portfolio extends Component {
                     bigAlt: 'My Employee Management App',
                     liveLink: 'https://www.youtube.com/watch?v=UztqwmOUK84&feature=youtu.be',
                     repoLink: 'https://github.com/hockeyduck3/Employee-Management-System',
-                    marginTop: '39px',
+                    marginTop: '45px',
                     description: 'For this project I had to go and build a Node.js app that also connected to a SQL server! The app can be used to help keep track and employee\'s in the company, what job they have, what department they\'re in, what their salary is, and even who their manager is! This app doesn\'t have a live website attached to it, but feel free to watch the video below to see this project in action!'
                 });
 
@@ -180,9 +180,9 @@ class Portfolio extends Component {
         }, 600);
     }
 
-    displayBigImg = () => {
-        document.getElementById('portfolioBigImg').style.visibility = 'visible';
-        document.getElementById('bigPicture').classList.add('animate__animated', 'animate__flipInX');
+    onLoadFunc = (id1, id2, animation, duration) => {
+        document.getElementById(id1).style.visibility = 'visible';
+        document.getElementById(id2).classList.add('animate__animated', `animate__${animation}`, `animate__delay-${duration}`);
     }
 
     render() {
@@ -193,11 +193,11 @@ class Portfolio extends Component {
                     <Card title={this.state.title} id='portfolio'>
                         <Container>
                                 <OnImagesLoaded
-                                    onLoaded={() => console.log('hi')}
-                                    onTimeout={() => console.log('hi')}
+                                    onLoaded={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
+                                    onTimeout={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
                                     timeout={5000}
                                 >
-                                    <div className='row mainSection animate__animated animate__fadeIn'>
+                                    <div className='row mainSection' id='mainSection' style={{visibility: 'hidden'}}>
                                         {/* Quiz Game */}
                                         <PortfolioCard 
                                             data='quiz'
@@ -277,8 +277,8 @@ class Portfolio extends Component {
                     <Card title='bigView' id='portfolio' bigTitle={this.state.bigViewTitle} backClick={this.displayPreview}>
                         <Container>
                             <OnImagesLoaded
-                                onLoaded={() => this.displayBigImg()}
-                                onTimeout={() => this.displayBigImg()}
+                                onLoaded={() => this.onLoadFunc('portfolioBigImg', 'bigPicture', 'flipInX', '0.9s')}
+                                onTimeout={() => this.onLoadFunc('portfolioBigImg', 'bigPicture', 'flipInX', '0.9s')}
                                 timeout={5000}
                             >
                                 <div className='row'>
