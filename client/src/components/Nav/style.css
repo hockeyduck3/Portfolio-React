@@ -33,6 +33,11 @@ button:focus {
     transition: ease-in 0.3s;
 }
 
+.fa-lg {
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
 /* Tablets */
 @media(max-width: 991px) {
     .navbar-nav, .nav-link {
