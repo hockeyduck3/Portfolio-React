@@ -178,8 +178,8 @@ class Portfolio extends Component {
                             </Container>
                         </Card>
 
-                        <Card>
-                            <Carousel>
+                        <Card bodyId='test'>
+                            <Carousel interval={null}>
                                 <Carousel.Item>
                                     <Container>
                                         <div className='row mainSection' id='mainSection'>
@@ -254,6 +254,50 @@ class Portfolio extends Component {
                                                 name='Poke-Build'
                                                 handleClick={this.handleClick}
                                             />
+                                        </div>
+                                    </Container>
+                                </Carousel.Item>
+
+                                <Carousel.Item>
+                                    <Container>
+                                        <div className='row mainSection' id='mainSection'>
+                                            {/* Quiz Game */}
+                                            <PortfolioCard
+                                                data='quiz'
+                                                img='./images/Quiz.jpg'
+                                                alt='Quiz Game'
+                                                name='Quiz Game!'
+                                                handleClick={this.handleClick}
+                                            />
+
+                                            {/* Password Maker */}
+                                            <PortfolioCard
+                                                data='password'
+                                                img='./images/Password.jpg'
+                                                alt='Password Maker'
+                                                name='Password Maker'
+                                                handleClick={this.handleClick}
+                                            />
+
+                                            {/* Weather App */}
+                                            <PortfolioCard
+                                                data='weather'
+                                                img='./images/Weather.jpg'
+                                                alt='Weather App'
+                                                name='Weather App'
+                                                handleClick={this.handleClick}
+                                            />
+
+                                            {/* COVID-19 Info */}
+                                            <PortfolioCard
+                                                data='covid'
+                                                img='./images/Covid.jpg'
+                                                alt='COVID-19 Info App'
+                                                name='COVID-19 Into'
+                                                handleClick={this.handleClick}
+                                            />
+
+                                        <div id='test2'><p style={{visibility: 'hidden'}}>This is just to make sure the Carousel doesn't shift. This paragraph is not visible to the user.</p></div>
                                         </div>
                                     </Container>
                                 </Carousel.Item>

@@ -2,8 +2,53 @@
     text-align: center;
 }
 
-/* Big View Styling */
+/* Carousel Styling */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23444' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
 
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23444' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 2%;
+}
+
+#test {
+    min-height: 714.376px;
+}
+
+#test2 {
+    display: block;
+    min-height: 303.160px;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+    margin-bottom: 0;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(163, 163, 163, 0.527);
+}
+
+.carousel-indicators .active {
+    width: 40px;
+    height: 2px;
+    margin: 10px;
+    text-indent: 0;
+    background-color: #444;
+}
+
+/* Big View Styling */
 .backBtn {
     color: #444;
     float: left;
@@ -13,14 +58,6 @@
 
 .backBtn:hover {
     color: rgb(95, 95, 95);
-}
-
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23444' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23444' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 .portfolioBigImg {
