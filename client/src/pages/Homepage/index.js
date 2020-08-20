@@ -82,7 +82,9 @@ class Homepage extends Component {
 
                                 <p className='text'> <button id='btn1' onClick={this.helloThereFunc}>Hello there!</button> My name is LJ <span role='img' aria-label='Smiling Emoji'>😁</span> and the Chihuahua in the picture with me is my sister's dog Tyne! (Pronounced Teeny) </p>
         
-                                <p className='text'>I'm a Salt Lake City native who is currently studying Full Stack Web Development at the University of Utah.</p>
+                                <p className='text'>I'm a Salt Lake City native, and recent Full Stack Web Developer graduate from the University of Utah.</p>
+
+                                <p className='text'>I have skills in HTML, Handlebars, CSS, Bootstrap, Javascript, jQuery, Nodejs, Express, mySQL, MongoDB, Git, and React.</p>
         
                                 <p className='text'>If you want to see some of the projects I've worked on, head over to my <Link to='/Portfolio' className='homepageLinks'>Portfolio page</Link></p>
         
@@ -90,7 +92,7 @@ class Homepage extends Component {
         
                                 <p className='text'>If you wanna know more about me, feel free to reach out to me on my <Link to='/Contact' className='homepageLinks'>Contact page</Link></p>
         
-                                <p className='text'>Or feel free to text me at 801-867-8728</p>
+                                <p className='text'>Or feel free to text me at <strong>801-867-8728</strong></p>
                             </div>
                         ) : (
                             <div id='helloThereDiv'>
