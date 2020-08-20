@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import OnImagesLoaded from 'react-on-images-loaded';
+import Carousel from 'react-bootstrap/Carousel'
 import grabProject from './grabProject';
 
 import Container from '../../components/Container/index';
@@ -54,7 +55,7 @@ class Portfolio extends Component {
                 bigView: true
             });
 
-            document.querySelector('body').scrollTo(0,0);
+            document.querySelector('body').scrollTo(0, 0);
 
             setTimeout(() => {
                 card.remove('animate__animated', 'animate__rubberBand');
@@ -92,16 +93,17 @@ class Portfolio extends Component {
         return (
             <Container fluid='-fluid'>
                 {!bigView ? (
-                    <Card title={this.state.title} id='portfolio'>
-                        <Container>
+                    <div>
+                        <Card title={this.state.title} id='portfolio'>
+                            <Container>
                                 <OnImagesLoaded
                                     onLoaded={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
                                     onTimeout={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
                                     timeout={5000}
                                 >
-                                    <div className='row mainSection' id='mainSection' style={{visibility: 'hidden'}}>
+                                    <div className='row mainSection' id='mainSection' style={{ visibility: 'hidden' }}>
                                         {/* Quiz Game */}
-                                        <PortfolioCard 
+                                        <PortfolioCard
                                             data='quiz'
                                             img='./images/Quiz.jpg'
                                             alt='Quiz Game'
@@ -110,7 +112,7 @@ class Portfolio extends Component {
                                         />
 
                                         {/* Password Maker */}
-                                        <PortfolioCard 
+                                        <PortfolioCard
                                             data='password'
                                             img='./images/Password.jpg'
                                             alt='Password Maker'
@@ -119,7 +121,7 @@ class Portfolio extends Component {
                                         />
 
                                         {/* Weather App */}
-                                        <PortfolioCard 
+                                        <PortfolioCard
                                             data='weather'
                                             img='./images/Weather.jpg'
                                             alt='Weather App'
@@ -128,7 +130,7 @@ class Portfolio extends Component {
                                         />
 
                                         {/* COVID-19 Info */}
-                                        <PortfolioCard 
+                                        <PortfolioCard
                                             data='covid'
                                             img='./images/Covid.jpg'
                                             alt='COVID-19 Info App'
@@ -137,7 +139,7 @@ class Portfolio extends Component {
                                         />
 
                                         {/* Note Taker */}
-                                        <PortfolioCard 
+                                        <PortfolioCard
                                             data='note'
                                             img='./images/Note-Taker.jpg'
                                             alt='Simple Note Taker App'
@@ -146,7 +148,7 @@ class Portfolio extends Component {
                                         />
 
                                         {/* Employee Management */}
-                                        <PortfolioCard 
+                                        <PortfolioCard
                                             data='employeeManage'
                                             img='./images/Employee-Management.jpg'
                                             alt='Employee Management App'
@@ -155,7 +157,7 @@ class Portfolio extends Component {
                                         />
 
                                         {/* Eat-Dat-Burger */}
-                                        <PortfolioCard 
+                                        <PortfolioCard
                                             data='burger'
                                             img='./images/Eat-Dat-Burger.jpg'
                                             alt='Eat-Dat-Burger App'
@@ -164,7 +166,7 @@ class Portfolio extends Component {
                                         />
 
                                         {/* Poke-Build */}
-                                        <PortfolioCard 
+                                        <PortfolioCard
                                             data='poke'
                                             img='./images/Poke-Build.jpg'
                                             alt='Poke-Build App'
@@ -173,45 +175,128 @@ class Portfolio extends Component {
                                         />
                                     </div>
                                 </OnImagesLoaded>
-                        </Container>
-                    </Card>
-                ) : (
-                    <Card title='bigView' id='portfolio' bigTitle={this.state.bigViewTitle} backClick={this.displayPreview}>
-                        <Container>
-                            <OnImagesLoaded
-                                onLoaded={() => this.onLoadFunc('portfolioBigImg', 'bigPicture', 'flipInX', '0.9s')}
-                                onTimeout={() => this.onLoadFunc('portfolioBigImg', 'bigPicture', 'flipInX', '0.9s')}
-                                timeout={5000}
-                            >
-                                <div className='row'>
-                                    {/* Image */}
-                                        <div className='col-lg-4' id='bigPicture'>
-                                            <img src={this.state.bigImg} alt={`Screenshot of ${this.state.bigAlt}`} className='portfolioBigImg' id='portfolioBigImg' style={{marginTop: this.state.marginTop, visibility: 'hidden'}} />
+                            </Container>
+                        </Card>
+
+                        <Card>
+                            <Carousel>
+                                <Carousel.Item>
+                                    <Container>
+                                        <div className='row mainSection' id='mainSection'>
+                                            {/* Quiz Game */}
+                                            <PortfolioCard
+                                                data='quiz'
+                                                img='./images/Quiz.jpg'
+                                                alt='Quiz Game'
+                                                name='Quiz Game!'
+                                                handleClick={this.handleClick}
+                                            />
+
+                                            {/* Password Maker */}
+                                            <PortfolioCard
+                                                data='password'
+                                                img='./images/Password.jpg'
+                                                alt='Password Maker'
+                                                name='Password Maker'
+                                                handleClick={this.handleClick}
+                                            />
+
+                                            {/* Weather App */}
+                                            <PortfolioCard
+                                                data='weather'
+                                                img='./images/Weather.jpg'
+                                                alt='Weather App'
+                                                name='Weather App'
+                                                handleClick={this.handleClick}
+                                            />
+
+                                            {/* COVID-19 Info */}
+                                            <PortfolioCard
+                                                data='covid'
+                                                img='./images/Covid.jpg'
+                                                alt='COVID-19 Info App'
+                                                name='COVID-19 Into'
+                                                handleClick={this.handleClick}
+                                            />
+
+                                            {/* Note Taker */}
+                                            <PortfolioCard
+                                                data='note'
+                                                img='./images/Note-Taker.jpg'
+                                                alt='Simple Note Taker App'
+                                                name='Note Taker'
+                                                handleClick={this.handleClick}
+                                            />
+
+                                            {/* Employee Management */}
+                                            <PortfolioCard
+                                                data='employeeManage'
+                                                img='./images/Employee-Management.jpg'
+                                                alt='Employee Management App'
+                                                name='Employee Management'
+                                                handleClick={this.handleClick}
+                                            />
+
+                                            {/* Eat-Dat-Burger */}
+                                            <PortfolioCard
+                                                data='burger'
+                                                img='./images/Eat-Dat-Burger.jpg'
+                                                alt='Eat-Dat-Burger App'
+                                                name='Eat-Dat-Burger!'
+                                                handleClick={this.handleClick}
+                                            />
+
+                                            {/* Poke-Build */}
+                                            <PortfolioCard
+                                                data='poke'
+                                                img='./images/Poke-Build.jpg'
+                                                alt='Poke-Build App'
+                                                name='Poke-Build'
+                                                handleClick={this.handleClick}
+                                            />
                                         </div>
-                                    
+                                    </Container>
+                                </Carousel.Item>
+                            </Carousel>
+                        </Card>
+                    </div>
+                ) : (
+                        <Card title='bigView' id='portfolio' bigTitle={this.state.bigViewTitle} backClick={this.displayPreview}>
+                            <Container>
+                                <OnImagesLoaded
+                                    onLoaded={() => this.onLoadFunc('portfolioBigImg', 'bigPicture', 'flipInX', '0.9s')}
+                                    onTimeout={() => this.onLoadFunc('portfolioBigImg', 'bigPicture', 'flipInX', '0.9s')}
+                                    timeout={5000}
+                                >
+                                    <div className='row'>
+                                        {/* Image */}
+                                        <div className='col-lg-4' id='bigPicture'>
+                                            <img src={this.state.bigImg} alt={`Screenshot of ${this.state.bigAlt}`} className='portfolioBigImg' id='portfolioBigImg' style={{ marginTop: this.state.marginTop, visibility: 'hidden' }} />
+                                        </div>
 
-                                    {/* Description and Links */}
-                                    <div className='col-lg-7 description'>
-                                        <h4 className='descriptionTitle'>Description</h4>
 
-                                        <p className='descriptionText'>{this.state.description}</p>
+                                        {/* Description and Links */}
+                                        <div className='col-lg-7 description'>
+                                            <h4 className='descriptionTitle'>Description</h4>
 
-                                        <h4 className='linksTitle'>Links</h4>
+                                            <p className='descriptionText'>{this.state.description}</p>
 
-                                        <div className='links'>
-                                            <div className='liveLinkDiv'>
-                                                <a href={this.state.liveLink} className='liveLink' target='_blank' rel='noopener noreferrer'><i className='fas fa-globe-americas' /> <span className='liveLinkText'>{this.state.bigViewTitle !== 'Employee Management App' ? 'Live Site' : 'YouTube Video'}</span></a>
-                                            </div>
-                                            <div className='repoLinkDiv'>
-                                                <a href={this.state.repoLink} className='repoLink' target='_blank' rel='noopener noreferrer'><i className='fab fa-github' /> Project Repo</a>
+                                            <h4 className='linksTitle'>Links</h4>
+
+                                            <div className='links'>
+                                                <div className='liveLinkDiv'>
+                                                    <a href={this.state.liveLink} className='liveLink' target='_blank' rel='noopener noreferrer'><i className='fas fa-globe-americas' /> <span className='liveLinkText'>{this.state.bigViewTitle !== 'Employee Management App' ? 'Live Site' : 'YouTube Video'}</span></a>
+                                                </div>
+                                                <div className='repoLinkDiv'>
+                                                    <a href={this.state.repoLink} className='repoLink' target='_blank' rel='noopener noreferrer'><i className='fab fa-github' /> Project Repo</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </OnImagesLoaded>
-                        </Container>
-                    </Card>
-                )}
+                                </OnImagesLoaded>
+                            </Container>
+                        </Card>
+                    )}
             </Container>
         )
     }
