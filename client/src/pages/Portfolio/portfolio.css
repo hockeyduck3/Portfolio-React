@@ -19,6 +19,14 @@
     width: 2%;
 }
 
+.carousel-control-prev {
+    left: -13px;
+}
+
+.carousel-control-next {
+    right: -13px;
+}
+
 #test2 {
     display: block;
     min-height: 303.160px;

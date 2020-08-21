@@ -48,5 +48,32 @@ export default {
             alt: 'Poke-Build App',
             name: 'Poke-Build'
         }
+    ],
+
+    secondProjects: [
+        {
+            data: 'quiz',
+            img: './images/Quiz.jpg',
+            alt: 'Quiz Game',
+            name: 'Quiz Game!'
+        },
+        {
+            data: 'password',
+            img: './images/Password.jpg',
+            alt: 'Password Maker',
+            name: 'Password Maker'
+        },
+        {
+            data: 'weather',
+            img: './images/Weather.jpg',
+            alt: 'Weather App',
+            name: 'Weather App'
+        },
+        {
+            data: 'covid',
+            img: './images/Covid.jpg',
+            alt: 'COVID-19 Info App',
+            name: 'COVID-19 Info'
+        }
     ]
 }
