@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import OnImagesLoaded from 'react-on-images-loaded';
 import Carousel from 'react-bootstrap/Carousel'
 import grabProject from './grabProject';
+import projectData from './projectData';
 
 import Container from '../../components/Container/index';
 import Card from '../../components/Card/index';
@@ -30,7 +31,15 @@ class Portfolio extends Component {
     handleClick = event => {
         const dataName = event.currentTarget.getAttribute('data-name');
 
-        const { bigViewTitle, bigImg, bigAlt, liveLink, repoLink, marginTop, description } = grabProject(dataName);
+        const { 
+            bigViewTitle, 
+            bigImg, 
+            bigAlt, 
+            liveLink, 
+            repoLink, 
+            marginTop, 
+            description 
+        } = grabProject(dataName);
 
         this.setState({
             bigViewTitle: bigViewTitle,
@@ -102,158 +111,40 @@ class Portfolio extends Component {
                                     timeout={5000}
                                 >
                                     <div className='row mainSection' id='mainSection' style={{ visibility: 'hidden' }}>
-                                        {/* Quiz Game */}
-                                        <PortfolioCard
-                                            data='quiz'
-                                            img='./images/Quiz.jpg'
-                                            alt='Quiz Game'
-                                            name='Quiz Game!'
-                                            handleClick={this.handleClick}
-                                        />
-
-                                        {/* Password Maker */}
-                                        <PortfolioCard
-                                            data='password'
-                                            img='./images/Password.jpg'
-                                            alt='Password Maker'
-                                            name='Password Maker'
-                                            handleClick={this.handleClick}
-                                        />
-
-                                        {/* Weather App */}
-                                        <PortfolioCard
-                                            data='weather'
-                                            img='./images/Weather.jpg'
-                                            alt='Weather App'
-                                            name='Weather App'
-                                            handleClick={this.handleClick}
-                                        />
-
-                                        {/* COVID-19 Info */}
-                                        <PortfolioCard
-                                            data='covid'
-                                            img='./images/Covid.jpg'
-                                            alt='COVID-19 Info App'
-                                            name='COVID-19 Into'
-                                            handleClick={this.handleClick}
-                                        />
-
-                                        {/* Note Taker */}
-                                        <PortfolioCard
-                                            data='note'
-                                            img='./images/Note-Taker.jpg'
-                                            alt='Simple Note Taker App'
-                                            name='Note Taker'
-                                            handleClick={this.handleClick}
-                                        />
-
-                                        {/* Employee Management */}
-                                        <PortfolioCard
-                                            data='employeeManage'
-                                            img='./images/Employee-Management.jpg'
-                                            alt='Employee Management App'
-                                            name='Employee Management'
-                                            handleClick={this.handleClick}
-                                        />
-
-                                        {/* Eat-Dat-Burger */}
-                                        <PortfolioCard
-                                            data='burger'
-                                            img='./images/Eat-Dat-Burger.jpg'
-                                            alt='Eat-Dat-Burger App'
-                                            name='Eat-Dat-Burger!'
-                                            handleClick={this.handleClick}
-                                        />
-
-                                        {/* Poke-Build */}
-                                        <PortfolioCard
-                                            data='poke'
-                                            img='./images/Poke-Build.jpg'
-                                            alt='Poke-Build App'
-                                            name='Poke-Build'
-                                            handleClick={this.handleClick}
-                                        />
+                                        {
+                                            projectData.firstProjects.map((res, i) => (
+                                                <PortfolioCard
+                                                    key={i} 
+                                                    data={res.data}
+                                                    img={res.img}
+                                                    alt={res.alt}
+                                                    name={res.name}
+                                                    handleClick={this.handleClick}
+                                                />
+                                            ))
+                                        }
                                     </div>
                                 </OnImagesLoaded>
                             </Container>
                         </Card>
 
-                        <Card bodyId='test'>
+                        <Card>
                             <Carousel interval={null}>
                                 <Carousel.Item>
                                     <Container>
                                         <div className='row mainSection' id='mainSection'>
-                                            {/* Quiz Game */}
-                                            <PortfolioCard
-                                                data='quiz'
-                                                img='./images/Quiz.jpg'
-                                                alt='Quiz Game'
-                                                name='Quiz Game!'
-                                                handleClick={this.handleClick}
-                                            />
-
-                                            {/* Password Maker */}
-                                            <PortfolioCard
-                                                data='password'
-                                                img='./images/Password.jpg'
-                                                alt='Password Maker'
-                                                name='Password Maker'
-                                                handleClick={this.handleClick}
-                                            />
-
-                                            {/* Weather App */}
-                                            <PortfolioCard
-                                                data='weather'
-                                                img='./images/Weather.jpg'
-                                                alt='Weather App'
-                                                name='Weather App'
-                                                handleClick={this.handleClick}
-                                            />
-
-                                            {/* COVID-19 Info */}
-                                            <PortfolioCard
-                                                data='covid'
-                                                img='./images/Covid.jpg'
-                                                alt='COVID-19 Info App'
-                                                name='COVID-19 Into'
-                                                handleClick={this.handleClick}
-                                            />
-
-                                            {/* Note Taker */}
-                                            <PortfolioCard
-                                                data='note'
-                                                img='./images/Note-Taker.jpg'
-                                                alt='Simple Note Taker App'
-                                                name='Note Taker'
-                                                handleClick={this.handleClick}
-                                            />
-
-                                            {/* Employee Management */}
-                                            <PortfolioCard
-                                                data='employeeManage'
-                                                img='./images/Employee-Management.jpg'
-                                                alt='Employee Management App'
-                                                name='Employee Management'
-                                                handleClick={this.handleClick}
-                                            />
-
-                                            {/* Eat-Dat-Burger */}
-                                            <PortfolioCard
-                                                data='burger'
-                                                img='./images/Eat-Dat-Burger.jpg'
-                                                alt='Eat-Dat-Burger App'
-                                                name='Eat-Dat-Burger!'
-                                                handleClick={this.handleClick}
-                                            />
-
-                                            {/* Poke-Build */}
-                                            <PortfolioCard
-                                                data='poke'
-                                                img='./images/Poke-Build.jpg'
-                                                alt='Poke-Build App'
-                                                name='Poke-Build'
-                                                handleClick={this.handleClick}
-                                            />
+                                            {
+                                                projectData.firstProjects.map((res, i) => (
+                                                    <PortfolioCard
+                                                        key={i} 
+                                                        data={res.data}
+                                                        img={res.img}
+                                                        alt={res.alt}
+                                                        name={res.name}
+                                                        handleClick={this.handleClick}
+                                                    />
+                                                ))
+                                            }
                                         </div>
                                     </Container>
                                 </Carousel.Item>
@@ -261,43 +152,19 @@ class Portfolio extends Component {
                                 <Carousel.Item>
                                     <Container>
                                         <div className='row mainSection' id='mainSection'>
-                                            {/* Quiz Game */}
-                                            <PortfolioCard
-                                                data='quiz'
-                                                img='./images/Quiz.jpg'
-                                                alt='Quiz Game'
-                                                name='Quiz Game!'
-                                                handleClick={this.handleClick}
-                                            />
-
-                                            {/* Password Maker */}
-                                            <PortfolioCard
-                                                data='password'
-                                                img='./images/Password.jpg'
-                                                alt='Password Maker'
-                                                name='Password Maker'
-                                                handleClick={this.handleClick}
-                                            />
-
-                                            {/* Weather App */}
-                                            <PortfolioCard
-                                                data='weather'
-                                                img='./images/Weather.jpg'
-                                                alt='Weather App'
-                                                name='Weather App'
-                                                handleClick={this.handleClick}
-                                            />
-
-                                            {/* COVID-19 Info */}
-                                            <PortfolioCard
-                                                data='covid'
-                                                img='./images/Covid.jpg'
-                                                alt='COVID-19 Info App'
-                                                name='COVID-19 Into'
-                                                handleClick={this.handleClick}
-                                            />
-
-                                        <div id='test2'><p style={{visibility: 'hidden'}}>This is just to make sure the Carousel doesn't shift. This paragraph is not visible to the user.</p></div>
+                                            {
+                                                projectData.firstProjects.map((res, i) => (
+                                                    <PortfolioCard
+                                                        key={i} 
+                                                        data={res.data}
+                                                        img={res.img}
+                                                        alt={res.alt}
+                                                        name={res.name}
+                                                        handleClick={this.handleClick}
+                                                    />
+                                                ))
+                                            }
+                                            {/* <div id='test2'><p style={{visibility: 'hidden'}}>This is just to make sure the Carousel doesn't shift. This paragraph is not visible to the user.</p></div> */}
                                         </div>
                                     </Container>
                                 </Carousel.Item>
