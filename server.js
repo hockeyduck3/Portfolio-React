@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 3001;
 server.use(express.static(path.join(__dirname, 'client/build')));
 
 // Handles any requests that don't match the ones above
-server.get('*', (req,res) =>{
-    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+server.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
 
 server.listen(PORT, () => {
