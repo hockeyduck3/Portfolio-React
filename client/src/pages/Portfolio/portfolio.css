@@ -74,14 +74,14 @@
 
 .portfolioBigImg {
     float: left;
-    width: 115%;
+    width: 125%;
     border: 3px solid;
     border-radius: 1rem;
     box-shadow: 1px 3px 3px 0px #444;
     margin: 25px 20px 10px 0px;
 }
 
-.linksTitle, .descriptionTitle {
+.linksTitle, .descriptionTitle, .techTitle {
     font-family: 'Yellowtail', cursive;
     font-size: 35px;
     text-align: center;
@@ -105,7 +105,7 @@
 }
 
 .description {
-    margin: 7px 0px 0px 60px;
+    margin: 7px 0px 0px 95px;
 }
 
 .descriptionText {
@@ -114,12 +114,42 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.techText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .links {
     text-align: center;
     margin: 15px 50px;
 }
 
+/* Tech Logo styling */
+.fa-html5 {
+    color: rgb(206, 138, 12);
+}
+
+.fa-css3-alt {
+    color: rgb(27, 122, 177);
+}
+
+.fa-bootstrap {
+    color: purple;
+}
+
+.fa-js-square {
+    color: rgb(209, 181, 23);
+}
+
+
 /* Tablets */
+@media (max-width: 1150px) {
+    .description {
+        margin-left: 69px;
+    }
+}
+
 @media (max-width: 990px) {
     #nonMobile {
         display: none;
@@ -144,7 +174,8 @@
     .portfolioBigImg {
         float: none;
         width: 100%;
-        margin: 0px 0px 20px 0px;
+        /* Have to add the !important otherwise it will stick with the inline-styling */
+        margin: 0px 0px 20px 0px !important;
     }
 
     .description {
