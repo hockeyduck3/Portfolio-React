@@ -142,6 +142,25 @@
     color: rgb(209, 181, 23);
 }
 
+#jQueryLogo {
+    width: 47px;
+}
+
+#FoundationLogo {
+    background-color: rgb(22, 119, 158);
+    border-radius: 0.5rem;
+    padding: 2px;
+    width: 35px;
+}
+
+#NodeJsLogo, #mySQLLogo, #HandlebarsLogo {
+    width: 50px;
+}
+
+#HandlebarsLogo {
+    border-radius: 0.5rem;
+}
+
 
 /* Tablets */
 @media (max-width: 1150px) {

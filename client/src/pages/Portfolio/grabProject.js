@@ -30,7 +30,11 @@ export default function (dataName) {
                     'fa-html5',
                     'fa-css3-alt',
                     'fa-bootstrap',
-                    'fa-js-square'
+                    'fa-js-square',
+                    {
+                        name: 'jQuery',
+                        img: './images/jQuery.png'
+                    }
                 ]
             };
 
@@ -47,7 +51,10 @@ export default function (dataName) {
                     'fa-html5',
                     'fa-css3-alt',
                     'fa-bootstrap',
-                    'fa-js-square'
+                    {
+                        name: 'jQuery',
+                        img: './images/jQuery.png'
+                    }
                 ]
             };
 
@@ -63,8 +70,14 @@ export default function (dataName) {
                 techUsed: [
                     'fa-html5',
                     'fa-css3-alt',
-                    'fa-bootstrap',
-                    'fa-js-square'
+                    {
+                        name: 'Foundation',
+                        img: './images/Foundation.png'
+                    },
+                    {
+                        name: 'jQuery',
+                        img: './images/jQuery.png'
+                    }
                 ]
             };
 
@@ -81,7 +94,14 @@ export default function (dataName) {
                     'fa-html5',
                     'fa-css3-alt',
                     'fa-bootstrap',
-                    'fa-js-square'
+                    {
+                        name: 'jQuery',
+                        img: './images/jQuery.png'
+                    },
+                    {
+                        name: 'NodeJs',
+                        img: './images/NodeJS.png'
+                    }
                 ]
             };
 
@@ -95,10 +115,14 @@ export default function (dataName) {
                 marginTop: '101px',
                 description: 'For this project I had to go and build a Node.js app that also connected to a SQL server! The app can be used to help keep track and employee\'s in the company, what job they have, what department they\'re in, what their salary is, and even who their manager is! This app doesn\'t have a live website attached to it, but feel free to watch the video below to see this project in action!',
                 techUsed: [
-                    'fa-html5',
-                    'fa-css3-alt',
-                    'fa-bootstrap',
-                    'fa-js-square'
+                    {
+                        name: 'NodeJs',
+                        img: './images/NodeJS.png'
+                    },
+                    {
+                        name: 'mySQL',
+                        img: './images/mySQL.png'
+                    }
                 ]
             };
 
@@ -112,10 +136,20 @@ export default function (dataName) {
                 marginTop: '75px',
                 description: 'For this project I had to go and make a simple burger eating website that utilized a SQL database. The website itself is using Handlebars for HTML handling, Bootstrap, jQuery, Express, and JawsDB. The main point of this website is simple, you can add a burger to the "Burgers to Devour" list, and then once you click on that burger it will move over to the "Devoured burgers" list! All of this is saved within a JawsDB SQL server.',
                 techUsed: [
-                    'fa-html5',
+                    {
+                        name: 'Handlebars',
+                        img: './images/Handlebars.jpg'
+                    },
                     'fa-css3-alt',
                     'fa-bootstrap',
-                    'fa-js-square'
+                    {
+                        name: 'jQuery',
+                        img: './images/jQuery.png'
+                    },
+                    {
+                        name: 'mySQL',
+                        img: './images/mySQL.png'
+                    }
                 ]
             };
 
@@ -129,10 +163,20 @@ export default function (dataName) {
                 marginTop: '61px',
                 description: 'This was my second group project in my Full Stack Web Course. We wanted to do something really fun for this project, something that both challenged us and something that we\'d be proud of! With Poke-Build you can go and view other user created Pokemon, Battle Pokemon, or simply make your own Pokemon!',
                 techUsed: [
-                    'fa-html5',
+                    {
+                        name: 'Handlebars',
+                        img: './images/Handlebars.jpg'
+                    },
                     'fa-css3-alt',
                     'fa-bootstrap',
-                    'fa-js-square'
+                    {
+                        name: 'jQuery',
+                        img: './images/jQuery.png'
+                    },
+                    {
+                        name: 'mySQL',
+                        img: './images/mySQL.png'
+                    }
                 ]
             };
     }

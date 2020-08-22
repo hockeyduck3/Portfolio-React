@@ -215,9 +215,19 @@ class Portfolio extends Component {
 
                                             <p className='techText'>
                                                 {
-                                                    this.state.techUsed.map((tech, i) => (
-                                                        <i key={i} className={`fab ${tech} fa-3x`} />
-                                                    ))
+                                                    this.state.techUsed.map((tech, i) => {
+                                                        if (typeof tech === 'string') {
+                                                            return (
+                                                                <i key={i} className={`fab ${tech} fa-3x`} />
+                                                            )
+                                                        } 
+                                                        
+                                                        else {
+                                                            return (
+                                                                <img key={i} id={`${tech.name}Logo`} src={tech.img} alt={`Logo for ${tech.name}`} />
+                                                            )
+                                                        }
+                                                    })
                                                 }
                                             </p>
 
