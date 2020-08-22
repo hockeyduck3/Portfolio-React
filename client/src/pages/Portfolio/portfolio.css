@@ -153,7 +153,7 @@
     width: 35px;
 }
 
-#NodeJsLogo, #mySQLLogo, #HandlebarsLogo {
+#NodeJsLogo, #mySQLLogo, #HandlebarsLogo,  #expressLogo {
     width: 50px;
 }
 
@@ -230,8 +230,18 @@
         font-size: 18px;
     }
 
-    #NodeJsLogo, #mySQLLogo, #HandlebarsLogo {
-        width: 46px;
+    .fa-html5, .fa-css3-alt, .fa-bootstrap, .fa-js-square {
+        font-size: 35px;
+    }
+
+    #jQueryLogo {
+        height: 35px;
+        width: 33px;
+    }
+
+    #NodeJsLogo, #mySQLLogo, #HandlebarsLogo,  #expressLogo {
+        height: 37px;
+        width: 38px;
     }
 }
 
@@ -245,7 +255,7 @@
         width: 29px;
     }
 
-    #NodeJsLogo, #mySQLLogo, #HandlebarsLogo {
+    #NodeJsLogo, #mySQLLogo, #HandlebarsLogo,  #expressLogo {
         height: 31px;
         width: 31px;
     }

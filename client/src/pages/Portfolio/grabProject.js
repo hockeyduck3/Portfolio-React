@@ -101,6 +101,10 @@ export default function (dataName) {
                     {
                         name: 'NodeJs',
                         img: './images/NodeJS.png'
+                    },
+                    {
+                        name: 'express',
+                        img: './images/express.png'
                     }
                 ]
             };
@@ -147,6 +151,14 @@ export default function (dataName) {
                         img: './images/jQuery.png'
                     },
                     {
+                        name: 'NodeJs',
+                        img: './images/NodeJS.png'
+                    },
+                    {
+                        name: 'express',
+                        img: './images/express.png'
+                    },
+                    {
                         name: 'mySQL',
                         img: './images/mySQL.png'
                     }
@@ -172,6 +184,14 @@ export default function (dataName) {
                     {
                         name: 'jQuery',
                         img: './images/jQuery.png'
+                    },
+                    {
+                        name: 'NodeJs',
+                        img: './images/NodeJS.png'
+                    },
+                    {
+                        name: 'express',
+                        img: './images/express.png'
                     },
                     {
                         name: 'mySQL',
