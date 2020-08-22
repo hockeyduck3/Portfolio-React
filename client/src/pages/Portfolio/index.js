@@ -55,17 +55,36 @@ class Portfolio extends Component {
     }
 
     displayBigView = () => {
-        const card = document.getElementById('card').classList;
+        const width = window.screen.width;
 
-        card.add('animate__animated', 'animate__fadeOut');
+        if (width < 1024) {
+            const card = document.getElementById('portfolio2').classList;
+    
+            card.add('animate__animated', 'animate__fadeOut');
+    
+            setTimeout(() => {
+                this.setState({
+                    bigView: true
+                });
+    
+                document.querySelector('body').scrollTo(0, 0);
+            }, 600);
+        } 
+        
+        else {
+            const card = document.getElementById('portfolio').classList;
+    
+            card.add('animate__animated', 'animate__fadeOut');
+    
+            setTimeout(() => {
+                this.setState({
+                    bigView: true
+                });
+    
+                document.querySelector('body').scrollTo(0, 0);
+            }, 600);
+        }
 
-        setTimeout(() => {
-            this.setState({
-                bigView: true
-            });
-
-            document.querySelector('body').scrollTo(0, 0);
-        }, 1000);
     }
 
     displayPreview = event => {
@@ -93,18 +112,39 @@ class Portfolio extends Component {
             <Container fluid='-fluid'>
                 {!bigView ? (
                     <div>
-                        <Card title={this.state.title} id='portfolio'>
-                            <Carousel interval={null}>
-                                <Carousel.Item>
-                                    <Container>
-                                        <OnImagesLoaded
-                                            onLoaded={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
-                                            onTimeout={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
-                                            timeout={5000}
-                                        >
+                        <div id='nonMobile'>
+                            <Card title={this.state.title} id='portfolio'>
+                                <Carousel interval={null}>
+                                    <Carousel.Item>
+                                        <Container>
+                                            <OnImagesLoaded
+                                                onLoaded={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
+                                                onTimeout={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
+                                                timeout={5000}
+                                            >
+                                                <div className='row mainSection' id='mainSection'>
+                                                    {
+                                                        projectData.firstProjects.map((res, i) => (
+                                                            <PortfolioCard
+                                                                key={i}
+                                                                data={res.data}
+                                                                img={res.img}
+                                                                alt={res.alt}
+                                                                name={res.name}
+                                                                handleClick={this.handleClick}
+                                                            />
+                                                        ))
+                                                    }
+                                                </div>
+                                            </OnImagesLoaded>
+                                        </Container>
+                                    </Carousel.Item>
+
+                                    <Carousel.Item>
+                                        <Container>
                                             <div className='row mainSection' id='mainSection'>
                                                 {
-                                                    projectData.firstProjects.map((res, i) => (
+                                                    projectData.secondProjects.map((res, i) => (
                                                         <PortfolioCard
                                                             key={i}
                                                             data={res.data}
@@ -115,16 +155,25 @@ class Portfolio extends Component {
                                                         />
                                                     ))
                                                 }
+                                                <div id='test2'><p style={{ visibility: 'hidden' }}>This is just to make sure the Carousel doesn't shift. This paragraph is not visible to the user.</p></div>
                                             </div>
-                                        </OnImagesLoaded>
-                                    </Container>
-                                </Carousel.Item>
+                                        </Container>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </Card>
+                        </div>
 
-                                <Carousel.Item>
-                                    <Container>
+                        <div id='mobile'>
+                            <Card title={this.state.title} id='portfolio2'>
+                                <Container>
+                                    <OnImagesLoaded
+                                        onLoaded={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
+                                        onTimeout={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
+                                        timeout={5000}
+                                    >
                                         <div className='row mainSection' id='mainSection'>
                                             {
-                                                projectData.secondProjects.map((res, i) => (
+                                                projectData.allProjects.map((res, i) => (
                                                     <PortfolioCard
                                                         key={i}
                                                         data={res.data}
@@ -135,12 +184,11 @@ class Portfolio extends Component {
                                                     />
                                                 ))
                                             }
-                                            <div id='test2'><p style={{ visibility: 'hidden' }}>This is just to make sure the Carousel doesn't shift. This paragraph is not visible to the user.</p></div>
                                         </div>
-                                    </Container>
-                                </Carousel.Item>
-                            </Carousel>
-                        </Card>
+                                    </OnImagesLoaded>
+                                </Container>
+                            </Card>
+                        </div>
                     </div>
                 ) : (
                         <Card title='bigView' id='portfolio' bigTitle={this.state.bigViewTitle} backClick={this.displayPreview}>

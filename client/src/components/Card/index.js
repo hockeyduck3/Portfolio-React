@@ -22,7 +22,7 @@ function Card(props) {
 
     else if (props.title === 'My Portfolio') {
         return (
-            <div className='card animate__animated animate__fadeIn' id='card'>
+            <div className='card animate__animated animate__fadeIn' id={props.id}>
                 <div className='card-body' id={props.bodyId ? props.bodyId : ''}>
                     <h2 className='cardTitle' id={props.id + 'Title'}>{props.title}</h2>
     
