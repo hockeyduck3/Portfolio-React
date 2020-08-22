@@ -214,8 +214,8 @@ class Portfolio extends Component {
                                         <h4 className='techTitle'>Tech Used</h4>
 
                                         <OnImagesLoaded
-                                            onLoaded={() => this.onLoadFunc('techText', 'techText', 'fadeIn', '0.9s')}
-                                            onTimeout={() => this.onLoadFunc('techText', 'techText', 'fadeIn', '0.9s')}
+                                            onLoaded={() => this.onLoadFunc('techText', 'techText', 'zoomIn', '0.9s')}
+                                            onTimeout={() => this.onLoadFunc('techText', 'techText', 'zoomIn', '0.9s')}
                                             timeout={5000}
                                         >
                                             <p className='techText' id='techText' style={{visibility: 'hidden'}}>
