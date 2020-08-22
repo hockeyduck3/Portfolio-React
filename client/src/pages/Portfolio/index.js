@@ -172,7 +172,7 @@ class Portfolio extends Component {
                                     <OnImagesLoaded
                                         onLoaded={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
                                         onTimeout={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
-                                        timeout={5000}
+                                        timeout={10000}
                                     >
                                         <div className='row mainSection' id='mainSection'>
                                             {
@@ -194,26 +194,31 @@ class Portfolio extends Component {
                         </div>
                     </div>
                 ) : (
-                        <Card title='bigView' id='portfolio' bigTitle={this.state.bigViewTitle} backClick={this.displayPreview}>
-                            <Container>
-                                <OnImagesLoaded
-                                    onLoaded={() => this.onLoadFunc('portfolioBigImg', 'bigPicture', 'flipInX', '0.9s')}
-                                    onTimeout={() => this.onLoadFunc('portfolioBigImg', 'bigPicture', 'flipInX', '0.9s')}
-                                    timeout={5000}
-                                >
-                                    <div className='row'>
-                                        {/* Image */}
-                                        <div className='col-lg-4' id='bigPicture'>
-                                            <img src={this.state.bigImg} alt={`Screenshot of ${this.state.bigAlt}`} className='portfolioBigImg' id='portfolioBigImg' style={{ marginTop: this.state.marginTop, visibility: 'hidden' }} />
-                                        </div>
+                    <Card title='bigView' id='portfolio' bigTitle={this.state.bigViewTitle} backClick={this.displayPreview}>
+                        <Container>
+                            <OnImagesLoaded
+                                onLoaded={() => this.onLoadFunc('portfolioBigImg', 'bigPicture', 'flipInX', '0.9s')}
+                                onTimeout={() => this.onLoadFunc('portfolioBigImg', 'bigPicture', 'flipInX', '0.9s')}
+                                timeout={5000}
+                            >
+                                <div className='row'>
+                                    {/* Image */}
+                                    <div className='col-lg-4' id='bigPicture'>
+                                        <img src={this.state.bigImg} alt={`Screenshot of ${this.state.bigAlt}`} className='portfolioBigImg' id='portfolioBigImg' style={{ marginTop: this.state.marginTop, visibility: 'hidden' }} />
+                                    </div>
 
 
-                                        {/* Description and Links */}
-                                        <div className='col-lg-7 description'>
+                                    {/* Description and Links */}
+                                    <div className='col-lg-7 description'>
 
-                                            <h4 className='techTitle'>Tech Used</h4>
+                                        <h4 className='techTitle'>Tech Used</h4>
 
-                                            <p className='techText'>
+                                        <OnImagesLoaded
+                                            onLoaded={() => this.onLoadFunc('techText', 'techText', 'fadeIn', '0.9s')}
+                                            onTimeout={() => this.onLoadFunc('techText', 'techText', 'fadeIn', '0.9s')}
+                                            timeout={5000}
+                                        >
+                                            <p className='techText' id='techText' style={{visibility: 'hidden'}}>
                                                 {
                                                     this.state.techUsed.map((tech, i) => {
                                                         if (typeof tech === 'string') {
@@ -230,28 +235,29 @@ class Portfolio extends Component {
                                                     })
                                                 }
                                             </p>
+                                        </OnImagesLoaded>
 
-                                            <h4 className='descriptionTitle'>Description</h4>
+                                        <h4 className='descriptionTitle'>Description</h4>
 
-                                            <p className='descriptionText'>{this.state.description}</p>
+                                        <p className='descriptionText'>{this.state.description}</p>
 
-                                            <h4 className='linksTitle'>Links</h4>
+                                        <h4 className='linksTitle'>Links</h4>
 
-                                            <div className='links'>
-                                                <div className='liveLinkDiv'>
-                                                    <a href={this.state.liveLink} className='liveLink' target='_blank' rel='noopener noreferrer'><i className='fas fa-globe-americas' /> <span className='liveLinkText'>{this.state.bigViewTitle !== 'Employee Management App' ? 'Live Site' : 'YouTube Video'}</span></a>
-                                                </div>
-                                                <div className='repoLinkDiv'>
-                                                    <a href={this.state.repoLink} className='repoLink' target='_blank' rel='noopener noreferrer'><i className='fab fa-github' /> Project Repo</a>
-                                                </div>
+                                        <div className='links'>
+                                            <div className='liveLinkDiv'>
+                                                <a href={this.state.liveLink} className='liveLink' target='_blank' rel='noopener noreferrer'><i className='fas fa-globe-americas' /> <span className='liveLinkText'>{this.state.bigViewTitle !== 'Employee Management App' ? 'Live Site' : 'YouTube Video'}</span></a>
                                             </div>
-
+                                            <div className='repoLinkDiv'>
+                                                <a href={this.state.repoLink} className='repoLink' target='_blank' rel='noopener noreferrer'><i className='fab fa-github' /> Project Repo</a>
+                                            </div>
                                         </div>
+
                                     </div>
-                                </OnImagesLoaded>
-                            </Container>
-                        </Card>
-                    )}
+                                </div>
+                            </OnImagesLoaded>
+                        </Container>
+                    </Card>
+                )}
             </Container>
         )
     }

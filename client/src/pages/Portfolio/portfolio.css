@@ -229,4 +229,42 @@
         margin: 15px 0px;
         font-size: 18px;
     }
+
+    #NodeJsLogo, #mySQLLogo, #HandlebarsLogo {
+        width: 46px;
+    }
+}
+
+@media (max-width: 320px) {
+    .fa-html5, .fa-css3-alt, .fa-bootstrap, .fa-js-square {
+        font-size: 32px;
+    }
+
+    #jQueryLogo {
+        height: 31px;
+        width: 29px;
+    }
+
+    #NodeJsLogo, #mySQLLogo, #HandlebarsLogo {
+        height: 31px;
+        width: 31px;
+    }
+
+    #FoundationLogo {
+        height: 31px;
+        padding: 1px;
+        width: 24px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .repoLink {
+        font-size: 17px;
+    }
+
+    .descriptionText {
+        font-size: 15px;
+    }
 }
