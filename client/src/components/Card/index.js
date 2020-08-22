@@ -35,7 +35,6 @@ function Card(props) {
     }
     
     else if (props.title !== 'messageSent') {
-        console.log(props.title)
         return (
             <div className='card' id='card'>
                 <div className='card-body' id={props.bodyId ? props.bodyId : ''}>

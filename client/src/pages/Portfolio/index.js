@@ -116,12 +116,12 @@ class Portfolio extends Component {
                 {!bigView ? (
                     <div>
                         <div id='nonMobile'>
-                            <Card title={this.state.title} id='portfolio'>
-                                <OnImagesLoaded
-                                    onLoaded={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
-                                    onTimeout={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
-                                    timeout={5000}
-                                >
+                            <OnImagesLoaded
+                                onLoaded={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
+                                onTimeout={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
+                                timeout={10000}
+                            >
+                                <Card title={this.state.title} id='portfolio'>
                                     <Carousel interval={null}>
                                         <Carousel.Item>
                                             <Container>
@@ -162,37 +162,37 @@ class Portfolio extends Component {
                                             </Container>
                                         </Carousel.Item>
                                     </Carousel>
-                                </OnImagesLoaded>
-                            </Card>
+                                </Card>
+                            </OnImagesLoaded>
                         </div>
 
-                            <div id='mobile'>
-                                <Card title={this.state.title} id='portfolio2'>
-                                    <Container>
-                                        <OnImagesLoaded
-                                            onLoaded={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
-                                            onTimeout={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
-                                            timeout={5000}
-                                        >
-                                            <div className='row mainSection' id='mainSection'>
-                                                {
-                                                    projectData.allProjects.map((res, i) => (
-                                                        <PortfolioCard
-                                                            key={i}
-                                                            data={res.data}
-                                                            img={res.img}
-                                                            alt={res.alt}
-                                                            name={res.name}
-                                                            handleClick={this.handleClick}
-                                                        />
-                                                    ))
-                                                }
-                                            </div>
-                                        </OnImagesLoaded>
-                                    </Container>
-                                </Card>
-                            </div>
+                        <div id='mobile'>
+                            <Card title={this.state.title} id='portfolio2'>
+                                <Container>
+                                    <OnImagesLoaded
+                                        onLoaded={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
+                                        onTimeout={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
+                                        timeout={5000}
+                                    >
+                                        <div className='row mainSection' id='mainSection'>
+                                            {
+                                                projectData.allProjects.map((res, i) => (
+                                                    <PortfolioCard
+                                                        key={i}
+                                                        data={res.data}
+                                                        img={res.img}
+                                                        alt={res.alt}
+                                                        name={res.name}
+                                                        handleClick={this.handleClick}
+                                                    />
+                                                ))
+                                            }
+                                        </div>
+                                    </OnImagesLoaded>
+                                </Container>
+                            </Card>
                         </div>
+                    </div>
                 ) : (
                         <Card title='bigView' id='portfolio' bigTitle={this.state.bigViewTitle} backClick={this.displayPreview}>
                             <Container>
@@ -235,15 +235,15 @@ class Portfolio extends Component {
                                                     <a href={this.state.repoLink} className='repoLink' target='_blank' rel='noopener noreferrer'><i className='fab fa-github' /> Project Repo</a>
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                 </OnImagesLoaded>
                             </Container>
                         </Card>
-                )}
+                    )}
             </Container>
-                )
+        )
     }
 }
 
