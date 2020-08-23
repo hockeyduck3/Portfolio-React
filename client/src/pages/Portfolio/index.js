@@ -170,11 +170,11 @@ class Portfolio extends Component {
                             <Card title={this.state.title} id='portfolio2'>
                                 <Container>
                                     <OnImagesLoaded
-                                        onLoaded={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
-                                        onTimeout={() => this.onLoadFunc('mainSection', 'mainSection', 'fadeIn', '0.9s')}
+                                        onLoaded={() => this.onLoadFunc('mainSection2', 'mainSection2', 'fadeIn', '0.9s')}
+                                        onTimeout={() => this.onLoadFunc('mainSection2', 'mainSection2', 'fadeIn', '0.9s')}
                                         timeout={10000}
                                     >
-                                        <div className='row mainSection' id='mainSection'>
+                                        <div className='row mainSection' id='mainSection2'>
                                             {
                                                 projectData.allProjects.map((res, i) => (
                                                     <PortfolioCard
