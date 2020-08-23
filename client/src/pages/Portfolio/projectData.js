@@ -52,10 +52,10 @@ export default {
 
     secondProjects: [
         {
-            data: 'quiz',
-            img: './images/Quiz.jpg',
-            alt: 'Quiz Game',
-            name: 'Quiz Game!'
+            data: 'budget',
+            img: './images/Budget.jpg',
+            alt: 'Progressive Budget',
+            name: 'Progressive Budget'
         },
         {
             data: 'password',
@@ -127,10 +127,10 @@ export default {
             name: 'Poke-Build'
         },
         {
-            data: 'quiz',
-            img: './images/Quiz.jpg',
-            alt: 'Quiz Game',
-            name: 'Quiz Game!'
+            data: 'budget',
+            img: './images/Budget.jpg',
+            alt: 'Progressive Budget',
+            name: 'Progressive Budget'
         },
         {
             data: 'password',

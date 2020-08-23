@@ -142,7 +142,7 @@
     color: rgb(209, 181, 23);
 }
 
-#jQueryLogo {
+#jQueryLogo, #MongoDBLogo {
     width: 47px;
 }
 
@@ -234,7 +234,7 @@
         font-size: 35px;
     }
 
-    #jQueryLogo {
+    #jQueryLogo, #MongoDBLogo {
         height: 35px;
         width: 33px;
     }
@@ -250,7 +250,7 @@
         font-size: 32px;
     }
 
-    #jQueryLogo {
+    #jQueryLogo, #MongoDBLogo {
         height: 31px;
         width: 29px;
     }

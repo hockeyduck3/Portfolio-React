@@ -165,7 +165,7 @@ export default function (dataName) {
                 ]
             };
 
-        default:
+        case 'poke':
             return {
                 bigViewTitle: 'Poke-Build',
                 bigImg: './images/Poke-Build-2.jpg',
@@ -199,5 +199,33 @@ export default function (dataName) {
                     }
                 ]
             };
+        
+        case 'budget':
+            return {
+                bigViewTitle: 'Progressive Budget',
+                bigImg: './images/Budget-2.png',
+                bigAlt: 'my Progressive Budget App',
+                liveLink: 'https://simple-budget-tracker-site.herokuapp.com/',
+                repoLink: 'https://github.com/hockeyduck3/Progressive-Budget',
+                marginTop: '30px',
+                description: 'TBD',
+                techUsed: [
+                    'fa-html5',
+                    'fa-css3-alt',
+                    'fa-bootstrap',
+                    {
+                        name: 'NodeJs',
+                        img: './images/NodeJS.png'
+                    },
+                    {
+                        name: 'express',
+                        img: './images/express.png'
+                    },
+                    {
+                        name: 'MongoDB',
+                        img: './images/mongodb.png'
+                    }
+                ]
+            }
     }
 }
