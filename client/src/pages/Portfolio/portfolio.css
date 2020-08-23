@@ -33,11 +33,12 @@
 
 #test2 {
     display: block;
-    min-height: 303.160px;
+    min-height: 308.45px;
 }
 
 .carousel-indicators {
-    bottom: -19px;
+    height: 1px;
+    bottom: 0px;
     margin-bottom: 0;
 }
 
@@ -234,27 +235,27 @@
         font-size: 18px;
     }
 
-    .fa-html5, .fa-css3-alt, .fa-bootstrap, .fa-js-square {
+    .fa-html5, .fa-css3-alt, .fa-bootstrap, .fa-js-square, .fa-react {
         font-size: 35px;
     }
 
-    #jQueryLogo, #MongoDBLogo {
-        height: 35px;
-        width: 33px;
+    #jQueryLogo, #MongoDBLogo, #SocketLogo {
+        height: 40px;
+        width: 39px;
     }
 
     #NodeJsLogo, #mySQLLogo, #HandlebarsLogo,  #expressLogo {
-        height: 37px;
-        width: 38px;
+        height: 39px;
+        width: 40px;
     }
 }
 
 @media (max-width: 320px) {
-    .fa-html5, .fa-css3-alt, .fa-bootstrap, .fa-js-square {
+    .fa-html5, .fa-css3-alt, .fa-bootstrap, .fa-js-square, .fa-react {
         font-size: 32px;
     }
 
-    #jQueryLogo, #MongoDBLogo {
+    #jQueryLogo, #MongoDBLogo, #SocketLogo {
         height: 31px;
         width: 29px;
     }

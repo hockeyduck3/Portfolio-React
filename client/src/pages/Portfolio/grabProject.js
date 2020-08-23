@@ -243,5 +243,65 @@ export default function (dataName) {
                     'fa-bootstrap'
                 ]
             }
+
+        case 'book':
+            return {
+                bigViewTitle: 'Google Books Search',
+                bigImg: './images/Book-Search-2.png',
+                bigAlt: 'my Google Books Search App',
+                liveLink: 'https://gbooks-react-site.herokuapp.com/',
+                repoLink: 'https://github.com/hockeyduck3/React-Google-Books',
+                marginTop: '35px',
+                description: 'TBD',
+                techUsed: [
+                    'fa-react',
+                    'fa-css3-alt',
+                    'fa-bootstrap',
+                    {
+                        name: 'NodeJs',
+                        img: './images/NodeJS.png'
+                    },
+                    {
+                        name: 'express',
+                        img: './images/express.png'
+                    },
+                    {
+                        name: 'MongoDB',
+                        img: './images/mongodb.png'
+                    }
+                ]
+            }
+
+        default:
+            return {
+                bigViewTitle: 'Change of Seasons',
+                bigImg: './images/COS-2.jpg',
+                bigAlt: 'Change of Seasons Game',
+                liveLink: 'https://changeofseasonstcg.herokuapp.com/',
+                repoLink: 'https://github.com/Bounty556/ChangeOfSeasonsTCG',
+                marginTop: '35px',
+                description: 'TBD',
+                techUsed: [
+                    'fa-react',
+                    'fa-css3-alt',
+                    'fa-bootstrap',
+                    {
+                        name: 'NodeJs',
+                        img: './images/NodeJS.png'
+                    },
+                    {
+                        name: 'express',
+                        img: './images/express.png'
+                    },
+                    {
+                        name: 'MongoDB',
+                        img: './images/mongodb.png'
+                    },
+                    {
+                        name: 'Socket',
+                        img: './images/Socket.png'
+                    }
+                ]
+            }
     }
 }

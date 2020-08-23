@@ -54,26 +54,26 @@ export default {
         {
             data: 'budget',
             img: './images/Budget.jpg',
-            alt: 'Progressive Budget',
+            alt: 'Progressive Budget App',
             name: 'Progressive Budget'
         },
         {
             data: 'directory',
             img: './images/Directory.png',
-            alt: 'Employee Directory',
+            alt: 'Employee Directory App',
             name: 'Employee Directory'
         },
         {
-            data: 'weather',
-            img: './images/Weather.jpg',
-            alt: 'Weather App',
-            name: 'Weather App'
+            data: 'book',
+            img: './images/Book-Search.png',
+            alt: 'Google Books Search App',
+            name: 'Google Books Search'
         },
         {
-            data: 'covid',
-            img: './images/Covid.jpg',
-            alt: 'COVID-19 Info App',
-            name: 'COVID-19 Info'
+            data: 'cos',
+            img: './images/COS.png',
+            alt: 'Change of Seasons Game',
+            name: 'Change of Seasons'
         }
     ],
 
@@ -129,26 +129,26 @@ export default {
         {
             data: 'budget',
             img: './images/Budget.jpg',
-            alt: 'Progressive Budget',
+            alt: 'Progressive Budget App',
             name: 'Progressive Budget'
         },
         {
             data: 'directory',
             img: './images/Directory.png',
-            alt: 'Employee Directory',
+            alt: 'Employee Directory App',
             name: 'Employee Directory'
         },
         {
-            data: 'weather',
-            img: './images/Weather.jpg',
-            alt: 'Weather App',
-            name: 'Weather App'
+            data: 'book',
+            img: './images/Book-Search.png',
+            alt: 'Google Books Search App',
+            name: 'Google Books Search'
         },
         {
-            data: 'covid',
-            img: './images/Covid.jpg',
-            alt: 'COVID-19 Info App',
-            name: 'COVID-19 Info'
+            data: 'cos',
+            img: './images/COS.png',
+            alt: 'Change of Seasons Game',
+            name: 'Change of Seasons'
         }
     ]
 }
