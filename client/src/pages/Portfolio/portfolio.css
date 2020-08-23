@@ -142,6 +142,10 @@
     color: rgb(209, 181, 23);
 }
 
+.fa-react {
+    color: #61dbfb;
+}
+
 #jQueryLogo, #MongoDBLogo {
     width: 47px;
 }

@@ -58,10 +58,10 @@ export default {
             name: 'Progressive Budget'
         },
         {
-            data: 'password',
-            img: './images/Password.jpg',
-            alt: 'Password Maker',
-            name: 'Password Maker'
+            data: 'directory',
+            img: './images/Directory.png',
+            alt: 'Employee Directory',
+            name: 'Employee Directory'
         },
         {
             data: 'weather',
@@ -133,10 +133,10 @@ export default {
             name: 'Progressive Budget'
         },
         {
-            data: 'password',
-            img: './images/Password.jpg',
-            alt: 'Password Maker',
-            name: 'Password Maker'
+            data: 'directory',
+            img: './images/Directory.png',
+            alt: 'Employee Directory',
+            name: 'Employee Directory'
         },
         {
             data: 'weather',

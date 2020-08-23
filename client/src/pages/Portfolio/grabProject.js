@@ -227,5 +227,21 @@ export default function (dataName) {
                     }
                 ]
             }
+
+        case 'directory':
+            return {
+                bigViewTitle: 'Employee Directory',
+                bigImg: './images/Directory-2.png',
+                bigAlt: 'my Employee Directory App',
+                liveLink: 'https://hockeyduck3.github.io/Employee-Directory/',
+                repoLink: 'https://github.com/hockeyduck3/Employee-Directory',
+                marginTop: '48px',
+                description: 'TBD',
+                techUsed: [
+                    'fa-react',
+                    'fa-css3-alt',
+                    'fa-bootstrap'
+                ]
+            }
     }
 }
