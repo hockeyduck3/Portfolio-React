@@ -207,8 +207,8 @@ export default function (dataName) {
                 bigAlt: 'my Progressive Budget App',
                 liveLink: 'https://simple-budget-tracker-site.herokuapp.com/',
                 repoLink: 'https://github.com/hockeyduck3/Progressive-Budget',
-                marginTop: '30px',
-                description: 'TBD',
+                marginTop: '57px',
+                description: 'With this project I was tasked with making a simple budget app into a PWA (Progressive Web App). The code for the front-end was provided, but I did make some small changes to it. For the backend database, this project is using MongoDB. The main functionality of this app is to be able to save your budget changes to the indexedDB in the browser if internet connect is lost, and have them upload in bulk once a connection is re-established.',
                 techUsed: [
                     'fa-html5',
                     'fa-css3-alt',
@@ -235,8 +235,8 @@ export default function (dataName) {
                 bigAlt: 'my Employee Directory App',
                 liveLink: 'https://hockeyduck3.github.io/Employee-Directory/',
                 repoLink: 'https://github.com/hockeyduck3/Employee-Directory',
-                marginTop: '24px',
-                description: 'TBD',
+                marginTop: '56px',
+                description: 'For this small project I had to go and build a simple employee directory from scratch using React. In terms of functionality, all of the users are randomly generated using the randomuser.me API. You also have search functionality, so you can search by first or last name, age, or date of birth. There\'s also a way to sort the employee\'s by name or age. One thing I did want to note is that this website was my first time building anything with the React framework, and I\'m really happy with how it turned out!',
                 techUsed: [
                     'fa-react',
                     'fa-css3-alt',
@@ -251,8 +251,8 @@ export default function (dataName) {
                 bigAlt: 'my Google Books Search App',
                 liveLink: 'https://gbooks-react-site.herokuapp.com/',
                 repoLink: 'https://github.com/hockeyduck3/React-Google-Books',
-                marginTop: '28px',
-                description: 'TBD',
+                marginTop: '52px',
+                description: 'This is a simple website I made for my Full Stack Web Course. I built this simple Google Books search page from scratch using React, and MongoDB as my database. The functionality of this website is pretty simple. You can search for any book you\'d like, and you can either view more about that book which will take you to the Google Books page, or you can save the book for viewing later.',
                 techUsed: [
                     'fa-react',
                     'fa-css3-alt',
@@ -279,8 +279,8 @@ export default function (dataName) {
                 bigAlt: 'Change of Seasons Game',
                 liveLink: 'https://changeofseasonstcg.herokuapp.com/',
                 repoLink: 'https://github.com/Bounty556/ChangeOfSeasonsTCG',
-                marginTop: '25px',
-                description: 'TBD',
+                marginTop: '53px',
+                description: 'Change of Seasons is an online multiplayer card game built by my group (the Dream-Team) as our final project. The game is based off the four seasons, Spring, Summer, Fall, and Winter. Once you make an account and select your desired deck, you\'ll then be able to hop into a match with a friend by sharing the game id automatically created after clicking "Create Match". Right now the game is in "Alpha" phase, with new features coming down the pipeline!',
                 techUsed: [
                     'fa-react',
                     'fa-css3-alt',
