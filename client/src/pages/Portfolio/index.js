@@ -75,6 +75,8 @@ class Portfolio extends Component {
         }
 
         else {
+            console.log(document.getElementById('portfolio'));
+
             const card = document.getElementById('portfolio').classList;
 
             card.add('animate__animated', 'animate__fadeOut');

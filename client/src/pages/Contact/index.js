@@ -132,7 +132,7 @@ class Contact extends Component {
         
         const data = new FormData(form);
         
-        document.getElementById('card').classList.add('animate__animated', 'animate__bounceOutUp');
+        document.getElementById('contact').classList.add('animate__animated', 'animate__bounceOutUp');
 
         setTimeout(() => {
             axios({
@@ -178,23 +178,25 @@ class Contact extends Component {
     }
 
     emailFail = () => {
-        const card = document.getElementById('card').classList;
-        const error = document.querySelector('.axiosError').classList;
+        const card = document.getElementById('contact').classList;
+        const error = document.querySelector('.axiosError');
 
         card.replace('animate__bounceOutUp', 'animate__bounceInDown');
+        error.classList.remove('hide');
 
         setTimeout(() => {
             card.remove('animate__animated', 'animate__bounceInDown');
-        }, 1000);
 
-        setTimeout(() => {
-            error.add('animate__animated', 'animate__fadeOut');
-            
             setTimeout(() => {
-                error.remove('animate__animated', 'animate__fadeOut');
-                error.add('hide');
-            }, 1000);
-        }, 3000);
+                error.classList.add('animate__animated', 'animate__fadeOut');
+
+                error.addEventListener('animationend', () => {
+                    error.classList.add('hide');
+                    error.classList.remove('animate__animated', 'animate__fadeOut');
+                });
+            }, 2000);
+        }, 1000);
+        
     }
 
     render() {

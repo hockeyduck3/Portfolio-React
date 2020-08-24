@@ -22,7 +22,7 @@ function Card(props) {
     
     else if (props.title !== 'messageSent') {
         return (
-            <div className='card' id='card'>
+            <div className='card' id={props.id ? props.id : 'card'}>
                 <div className='card-body' id={props.bodyId ? props.bodyId : ''}>
                     <h2 className='cardTitle' id={props.id + 'Title'}>{props.title}</h2>
     
