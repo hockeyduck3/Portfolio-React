@@ -19,20 +19,6 @@ function Card(props) {
             </div>
         )
     }
-
-    else if (props.title === 'My Portfolio') {
-        return (
-            <div className='card animate__animated animate__fadeIn animate__delay-0.9s' id={props.id}>
-                <div className='card-body' id={props.bodyId ? props.bodyId : ''}>
-                    <h2 className='cardTitle' id={props.id + 'Title'}>{props.title}</h2>
-    
-                    <hr className='line'></hr>
-    
-                    {props.children}
-                </div>
-            </div>
-        )
-    }
     
     else if (props.title !== 'messageSent') {
         return (

@@ -125,7 +125,7 @@ class Portfolio extends Component {
                                     <Carousel interval={null}>
                                         <Carousel.Item>
                                             <Container>
-                                                <div className='row mainSection' id='mainSection'>
+                                                <div className='row mainSection' id='mainSection' style={{visibility: 'hidden'}}>
                                                     {
                                                         projectData.firstProjects.map((res, i) => (
                                                             <PortfolioCard
@@ -173,7 +173,7 @@ class Portfolio extends Component {
                                         onTimeout={() => this.onLoadFunc('mainSection2', 'mainSection2', 'fadeIn', '0.9s')}
                                         timeout={10000}
                                     >
-                                        <div className='row mainSection' id='mainSection2'>
+                                        <div className='row mainSection' id='mainSection2' style={{visibility: 'hidden'}}>
                                             {
                                                 projectData.allProjects.map((res, i) => (
                                                     <PortfolioCard
