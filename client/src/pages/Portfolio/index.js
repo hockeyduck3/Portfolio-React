@@ -75,8 +75,6 @@ class Portfolio extends Component {
         }
 
         else {
-            console.log(document.getElementById('portfolio'));
-
             const card = document.getElementById('portfolio').classList;
 
             card.add('animate__animated', 'animate__fadeOut');
@@ -126,7 +124,7 @@ class Portfolio extends Component {
                                 <Card title={this.state.title} id='portfolio'>
                                     <Carousel interval={null}>
                                         <Carousel.Item>
-                                            <Container>
+                                            <Container min={true}>
                                                 <div className='row mainSection' id='mainSection' style={{visibility: 'hidden'}}>
                                                     {
                                                         projectData.firstProjects.map((res, i) => (
@@ -145,7 +143,7 @@ class Portfolio extends Component {
                                         </Carousel.Item>
 
                                         <Carousel.Item>
-                                            <Container>
+                                            <Container min={true}>
                                                 <div className='row mainSection' id='mainSection'>
                                                     {
                                                         projectData.secondProjects.map((res, i) => (

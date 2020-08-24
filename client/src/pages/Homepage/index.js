@@ -18,14 +18,14 @@ class Homepage extends Component {
     }
 
     helloThereFunc = () => {
-        const card = document.getElementById('card');
-        const ghLink = document.getElementById('githubLink');
+        const card = document.getElementById('homepage').classList;
+        const ghLink = document.getElementById('githubLink').classList;
 
-        // Once this function is start the card will slide out to the right
-        card.classList.add('animate__animated', 'animate__backOutRight');
+        // Once this function is starting the card will slide out to the right
+        card.add('animate__animated', 'animate__backOutRight');
 
         // And the Github link will fade out
-        ghLink.classList.add('animate__animated', 'animate__fadeOut');
+        ghLink.add('animate__animated', 'animate__fadeOut');
 
         // Wait 1.2 seconds
         setTimeout(() => {
@@ -36,12 +36,12 @@ class Homepage extends Component {
             });
 
             // Card will slide in from the left
-            card.classList.replace('animate__backOutRight', 'animate__backInLeft');
+            card.replace('animate__backOutRight', 'animate__backInLeft');
 
             // Wait 6 seconds
             setTimeout(() => {
                 // Have the card slide out to the right again
-                card.classList.add('animate__animated', 'animate__backOutRight');
+                card.add('animate__animated', 'animate__backOutRight');
 
                 setTimeout(() => {
                     // Change the state back
@@ -51,10 +51,10 @@ class Homepage extends Component {
                     });
                     
                     // Card slides back in on the left
-                    card.classList.replace('animate__backOutRight', 'animate__backInLeft');
+                    card.replace('animate__backOutRight', 'animate__backInLeft');
 
                     // And the Github link will fade back in
-                    ghLink.classList.replace('animate__fadeOut', 'animate__fadeIn');
+                    ghLink.replace('animate__fadeOut', 'animate__fadeIn');
                 }, 1200);
             }, 6000);
         }, 1200);
