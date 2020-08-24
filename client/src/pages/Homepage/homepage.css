@@ -54,6 +54,29 @@ a:hover {
     color: rgb(9, 87, 165);
 }
 
+.socialText {
+    visibility: hidden;
+}
+
+.homepageSocial {
+    display: none;
+    flex-direction: row;
+    font-size: 50px;
+    justify-content: space-evenly;
+}
+
+#twitter2 {
+    color: #1DA1F2;
+}
+
+#github2 {
+    color: black;
+}
+
+#linkedin2 {
+    color: #0077B5;
+}
+
 #githubLink {
     font-size: 16px;
     margin-bottom: 30px;
@@ -94,5 +117,13 @@ a:hover {
 
     #helloThereGif {
         width: 100%;
+    }
+
+    .socialText {
+        visibility: visible;
+    }
+
+    .homepageSocial {
+        display: flex;
     }
 }

@@ -93,6 +93,25 @@ class Homepage extends Component {
                                 <p className='text'>If you want to know more about me, feel free to reach out to me on my <Link to='/Contact' className='homepageLinks'>Contact page</Link></p>
         
                                 <p className='text'>Or feel free to text me at <strong>801-867-8728</strong></p>
+
+                                <p className='text socialText'>You can also reach me on Social Media!</p>
+
+                                <div className='homepageSocial'>
+                                    {/* Twitter Link */}
+                                    <a href='https://twitter.com/ljspencer97' target='_blank' rel='noopener noreferrer'>
+                                        <i id='twitter2' className='fab fa-twitter-square'></i>
+                                    </a>
+
+                                    {/* Github Link */}
+                                    <a id='github2' href='https://github.com/hockeyduck3' target='_blank' rel='noopener noreferrer'>
+                                        <i className='fab fa-github-square'></i>
+                                    </a>
+
+                                    {/* LinkedIn Link */}
+                                    <a id='linkedin2' href='https://linkedin.com/in/lj-spencer' target='_blank' rel='noopener noreferrer'>
+                                        <i className='fab fa-linkedin'></i>
+                                    </a>
+                                </div>
                             </div>
                         ) : (
                             <div id='helloThereDiv'>
