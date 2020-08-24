@@ -1,0 +1,41 @@
+#notFoundCard {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#notFoundTitle {
+    font-size: 45px;
+    text-align: center;
+}
+
+.notFoundText {
+    text-align: center;
+    margin: 10px auto;
+    font-family: 'Domine', serif;
+    font-size: 15px;
+}
+
+#sadDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#sadGif {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 2px 6px 15px -3px #444;
+    margin: 20px;
+    width: 80%;
+}
+
+@media (max-width: 640px) {
+    #notFoundTitle {
+        font-size: 35px;
+    }
+
+    #sadGif {
+        width: 100%;
+    }
+}

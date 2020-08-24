@@ -20,7 +20,7 @@ function Card(props) {
         )
     }
     
-    else if (props.title !== 'messageSent') {
+    else if (props.title !== 'messageSent' && props.title !== '404') {
         return (
             <div className='card' id={props.id ? props.id : 'card'}>
                 <div className='card-body' id={props.bodyId ? props.bodyId : ''}>
@@ -36,7 +36,7 @@ function Card(props) {
     
     else {
         return (
-            <div className='card' id='card'>
+            <div className='card' id={props.id ? props.id : 'card'}>
                 <div className='card-body'>    
                     {props.children}
                 </div>
