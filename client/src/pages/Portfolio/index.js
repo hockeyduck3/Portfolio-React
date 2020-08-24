@@ -157,7 +157,6 @@ class Portfolio extends Component {
                                                             />
                                                         ))
                                                     }
-                                                    <div id='test2'><p style={{ visibility: 'hidden' }}>This is just to make sure the Carousel doesn't shift. This paragraph is not visible to the user.</p></div>
                                                 </div>
                                             </Container>
                                         </Carousel.Item>
