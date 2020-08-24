@@ -235,7 +235,7 @@ export default function (dataName) {
                 bigAlt: 'my Employee Directory App',
                 liveLink: 'https://hockeyduck3.github.io/Employee-Directory/',
                 repoLink: 'https://github.com/hockeyduck3/Employee-Directory',
-                marginTop: '48px',
+                marginTop: '24px',
                 description: 'TBD',
                 techUsed: [
                     'fa-react',
@@ -251,7 +251,7 @@ export default function (dataName) {
                 bigAlt: 'my Google Books Search App',
                 liveLink: 'https://gbooks-react-site.herokuapp.com/',
                 repoLink: 'https://github.com/hockeyduck3/React-Google-Books',
-                marginTop: '35px',
+                marginTop: '28px',
                 description: 'TBD',
                 techUsed: [
                     'fa-react',
@@ -275,11 +275,11 @@ export default function (dataName) {
         default:
             return {
                 bigViewTitle: 'Change of Seasons',
-                bigImg: './images/COS-2.jpg',
+                bigImg: './images/COS-2.png',
                 bigAlt: 'Change of Seasons Game',
                 liveLink: 'https://changeofseasonstcg.herokuapp.com/',
                 repoLink: 'https://github.com/Bounty556/ChangeOfSeasonsTCG',
-                marginTop: '35px',
+                marginTop: '25px',
                 description: 'TBD',
                 techUsed: [
                     'fa-react',
