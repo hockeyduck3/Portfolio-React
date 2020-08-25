@@ -115,7 +115,7 @@ class Homepage extends Component {
                             </div>
                         ) : (
                             <div id='helloThereDiv'>
-                                <img id='helloThereGif' src='./images/hello-there.gif' alt='Obi-Wan Kenobi says, hello there!' />
+                                <img id='helloThereGif' src='./gifs/hello-there.gif' alt='Obi-Wan Kenobi says, hello there!' />
                             </div>
                         )}
                     </div>
