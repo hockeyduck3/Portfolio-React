@@ -9,7 +9,7 @@ function Nav() {
 
     const body = document.body;
     const navbar = document.getElementsByClassName('collapsed');
-    
+
     body.addEventListener('click', function() {
         if (navbar.length === 0) {
             document.querySelector('.navbar-toggler').click();
@@ -21,31 +21,10 @@ function Nav() {
     });
 
     function changeFunc() {
-        const navbarBtn = document.getElementById('navbar-toggler');
-
         if (!navbarToggleBtn) {
-            navbarBtn.style.setProperty('--animate-duration', '0.3s');
-            navbarBtn.classList.add('animate__animated', 'animate__fadeOut');
-    
-            navbarBtn.addEventListener('animationend', () => {
-                setNavbarToggleBtn(true);
-                navbarBtn.classList.replace('animate__fadeOut', 'animate__fadeIn');
-
-                setTimeout(() => {
-                    navbarBtn.classList.remove('animate__animated', 'animate__fadeIn');
-                }, 500);
-            });
+            setNavbarToggleBtn(true);
         } else {
-            navbarBtn.classList.add('animate__animated', 'animate__fadeOut');
-    
-            navbarBtn.addEventListener('animationend', () => {
-                setNavbarToggleBtn(false);
-                navbarBtn.classList.replace('animate__fadeOut', 'animate__fadeIn');
-
-                setTimeout(() => {
-                    navbarBtn.classList.remove('animate__animated', 'animate__fadeIn');
-                }, 500);
-            });
+            setNavbarToggleBtn(false);
         }
     }
 

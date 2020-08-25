@@ -35,3 +35,9 @@
 .project:hover {
     transform: scale(1.03);
 }
+
+@media (max-width: 640px) {
+    .project:hover {
+        transform: scale(1);
+    }
+}

@@ -59,11 +59,15 @@ class Portfolio extends Component {
 
     displayBigView = () => {
         const width = window.screen.width;
+        let card;
 
         if (width < 1024) {
-            const card = document.getElementById('portfolio2').classList;
+            card = document.getElementById('portfolio2').classList;
+        } else {
+            card = document.getElementById('portfolio').classList;
+        }
 
-            card.add('animate__animated', 'animate__fadeOut');
+        card.add('animate__animated', 'animate__fadeOut');
 
             setTimeout(() => {
                 this.setState({
@@ -72,21 +76,6 @@ class Portfolio extends Component {
 
                 document.querySelector('body').scrollTo(0, 0);
             }, 600);
-        }
-
-        else {
-            const card = document.getElementById('portfolio').classList;
-
-            card.add('animate__animated', 'animate__fadeOut');
-
-            setTimeout(() => {
-                this.setState({
-                    bigView: true
-                });
-
-                document.querySelector('body').scrollTo(0, 0);
-            }, 600);
-        }
 
     }
 
