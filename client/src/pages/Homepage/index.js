@@ -22,7 +22,7 @@ class Homepage extends Component {
         const ghLink = document.getElementById('githubLink').classList;
 
         // Once this function is starting the card will slide out to the right
-        card.add('animate__animated', 'animate__backOutRight');
+        card.replace('animate__fadeIn', 'animate__backOutRight');
 
         // And the Github link will fade out
         ghLink.add('animate__animated', 'animate__fadeOut');
@@ -122,7 +122,8 @@ class Homepage extends Component {
                 </Card>
 
                 <div id='githubLink'>
-                    <a href='https://github.com/hockeyduck3/Portfolio-React' target='_blank' rel='noopener noreferrer'>Click here for my website's Repo <i className='fab fa-github'></i></a>
+                    <a href='https://github.com/hockeyduck3/Portfolio-React' target='_blank' rel='noopener noreferrer'>Click here for my website's Repo <i className='fab fa-github' /></a>
+                    <p id='homepageReactLink'>My portfolio was built using <a id='reactLink' href='https://reactjs.org/' target='_blank' rel='noopener noreferrer'>React <i className='fab fa-react reactLinkLogo' /></a></p>
                 </div>
             </Container>
         )

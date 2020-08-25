@@ -83,6 +83,20 @@ a:hover {
     text-align: center;
 }
 
+#homepageReactLink {
+    margin-top: 5px;
+}
+
+#reactLink {
+    color: #61DBFB;
+    font-family: 'Yellowtail', cursive;
+    text-shadow: 1px 1px 0px #444, 1px 1px 3px #444;
+}
+
+.reactLinkLogo {
+    margin-left: 5px;
+}
+
 #helloThereDiv {
     display: flex;
     justify-content: center;
