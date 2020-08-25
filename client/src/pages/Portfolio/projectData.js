@@ -77,7 +77,7 @@ export default {
         }
     ],
 
-    allProjects : [
+    allProjects: [
         {
             data: 'quiz',
             img: './images/project-previews/Quiz.jpg',

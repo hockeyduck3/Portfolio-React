@@ -32,7 +32,7 @@ function NotFound() {
                         <h2 id='notFoundTitle'>The page you're looking for couldn't be found... <span role='img' aria-label='One Tear Emoji'>😢</span></h2>
 
                         <div id='sadDiv'>
-                            <img id='sadGif' src='./images/sad.gif' alt='Saddnes from Inside Out is crying because you got a 404 error.' />
+                            <img id='sadGif' src='./gifs/sad.gif' alt='Saddnes from Inside Out is crying because you got a 404 error.' />
                         </div>
 
                         <p className='notFoundText'>
