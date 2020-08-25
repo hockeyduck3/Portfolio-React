@@ -140,4 +140,14 @@ a:hover {
     .homepageSocial {
         display: flex;
     }
+
+    .reactLinkLogo {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 320px) {
+    .reactLinkLogo {
+        font-size: 13px;
+    }
 }
