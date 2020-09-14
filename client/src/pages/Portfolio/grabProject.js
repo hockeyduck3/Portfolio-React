@@ -3,7 +3,7 @@ export default function (dataName) {
         case 'quiz':
             return {
                 bigViewTitle: 'My Quiz Game',
-                bigImg: './images/Quiz-2.jpg',
+                bigImg: './images/project-big-previews/Quiz-2.jpg',
                 bigAlt: 'My Quiz Game',
                 liveLink: 'https://hockeyduck3.github.io/Quiz-Game/',
                 repoLink: 'https://github.com/hockeyduck3/Quiz-Game',
@@ -20,7 +20,7 @@ export default function (dataName) {
         case 'password':
             return {
                 bigViewTitle: 'My Password Generator',
-                bigImg: './images/Password-2.jpg',
+                bigImg: './images/project-big-previews/Password-2.jpg',
                 bigAlt: 'My Password Generator',
                 liveLink: 'https://hockeyduck3.github.io/Password-Generator/',
                 repoLink: 'https://github.com/hockeyduck3/Password-Generator',
@@ -33,7 +33,7 @@ export default function (dataName) {
                     'fa-js-square',
                     {
                         name: 'jQuery',
-                        img: './images/jQuery.png'
+                        img: './images/tech-logos/jQuery.png'
                     }
                 ]
             };
@@ -41,7 +41,7 @@ export default function (dataName) {
         case 'weather':
             return {
                 bigViewTitle: 'My Weather App',
-                bigImg: './images/Weather-2.jpg',
+                bigImg: './images/project-big-previews/Weather-2.jpg',
                 bigAlt: 'My Weather App',
                 liveLink: 'https://hockeyduck3.github.io/Weather-Site/',
                 repoLink: 'https://github.com/hockeyduck3/Weather-Site',
@@ -53,7 +53,7 @@ export default function (dataName) {
                     'fa-bootstrap',
                     {
                         name: 'jQuery',
-                        img: './images/jQuery.png'
+                        img: './images/tech-logos/jQuery.png'
                     }
                 ]
             };
@@ -61,7 +61,7 @@ export default function (dataName) {
         case 'covid':
             return {
                 bigViewTitle: 'COVID-19 Website',
-                bigImg: './images/Covid-2.jpg',
+                bigImg: './images/project-big-previews/Covid-2.jpg',
                 bigAlt: 'COVID-19 Website',
                 liveLink: 'https://hockeyduck3.github.io/COVID-Website/',
                 repoLink: 'https://github.com/hockeyduck3/COVID-Website',
@@ -72,11 +72,11 @@ export default function (dataName) {
                     'fa-css3-alt',
                     {
                         name: 'Foundation',
-                        img: './images/Foundation.png'
+                        img: './images/tech-logos/Foundation.png'
                     },
                     {
                         name: 'jQuery',
-                        img: './images/jQuery.png'
+                        img: './images/tech-logos/jQuery.png'
                     }
                 ]
             };
@@ -84,7 +84,7 @@ export default function (dataName) {
         case 'note':
             return {
                 bigViewTitle: 'Simple Note Taker',
-                bigImg: './images/Note-Taker-2.jpg',
+                bigImg: './images/project-big-previews/Note-Taker-2.jpg',
                 bigAlt: 'My Simple Note Taker',
                 liveLink: 'https://simple-notes-taker.herokuapp.com/',
                 repoLink: 'https://github.com/hockeyduck3/Simple-Note-Taker',
@@ -96,15 +96,15 @@ export default function (dataName) {
                     'fa-bootstrap',
                     {
                         name: 'jQuery',
-                        img: './images/jQuery.png'
+                        img: './images/tech-logos/jQuery.png'
                     },
                     {
                         name: 'NodeJs',
-                        img: './images/NodeJS.png'
+                        img: './images/tech-logos/NodeJS.png'
                     },
                     {
                         name: 'express',
-                        img: './images/express.png'
+                        img: './images/tech-logos/express.png'
                     }
                 ]
             };
@@ -112,7 +112,7 @@ export default function (dataName) {
         case 'employeeManage':
             return {
                 bigViewTitle: 'Employee Management App',
-                bigImg: './images/Employee-Management-2.jpg',
+                bigImg: './images/project-big-previews/Employee-Management-2.jpg',
                 bigAlt: 'My Employee Management App',
                 liveLink: 'https://www.youtube.com/watch?v=UztqwmOUK84&feature=youtu.be',
                 repoLink: 'https://github.com/hockeyduck3/Employee-Management-System',
@@ -121,11 +121,11 @@ export default function (dataName) {
                 techUsed: [
                     {
                         name: 'NodeJs',
-                        img: './images/NodeJS.png'
+                        img: './images/tech-logos/NodeJS.png'
                     },
                     {
                         name: 'mySQL',
-                        img: './images/mySQL.png'
+                        img: './images/tech-logos/mySQL.png'
                     }
                 ]
             };
@@ -133,7 +133,7 @@ export default function (dataName) {
         case 'burger':
             return {
                 bigViewTitle: 'Eat-Dat-Burger',
-                bigImg: './images/Eat-Dat-Burger-2.jpg',
+                bigImg: './images/project-big-previews/Eat-Dat-Burger-2.jpg',
                 bigAlt: 'My Eat-Dat-Burger App',
                 liveLink: 'https://eat-dat-burger-website.herokuapp.com/',
                 repoLink: 'https://github.com/hockeyduck3/Eat-Dat-Burger',
@@ -142,25 +142,25 @@ export default function (dataName) {
                 techUsed: [
                     {
                         name: 'Handlebars',
-                        img: './images/Handlebars.jpg'
+                        img: './images/tech-logos/Handlebars.jpg'
                     },
                     'fa-css3-alt',
                     'fa-bootstrap',
                     {
                         name: 'jQuery',
-                        img: './images/jQuery.png'
+                        img: './images/tech-logos/jQuery.png'
                     },
                     {
                         name: 'NodeJs',
-                        img: './images/NodeJS.png'
+                        img: './images/tech-logos/NodeJS.png'
                     },
                     {
                         name: 'express',
-                        img: './images/express.png'
+                        img: './images/tech-logos/express.png'
                     },
                     {
                         name: 'mySQL',
-                        img: './images/mySQL.png'
+                        img: './images/tech-logos/mySQL.png'
                     }
                 ]
             };
@@ -168,7 +168,7 @@ export default function (dataName) {
         case 'poke':
             return {
                 bigViewTitle: 'Poke-Build',
-                bigImg: './images/Poke-Build-2.jpg',
+                bigImg: './images/project-big-previews/Poke-Build-2.jpg',
                 bigAlt: 'the Poke-Build Website',
                 liveLink: 'https://poke-build.herokuapp.com/',
                 repoLink: 'https://github.com/Akessler314/PokE-Build',
@@ -177,25 +177,25 @@ export default function (dataName) {
                 techUsed: [
                     {
                         name: 'Handlebars',
-                        img: './images/Handlebars.jpg'
+                        img: './images/tech-logos/Handlebars.jpg'
                     },
                     'fa-css3-alt',
                     'fa-bootstrap',
                     {
                         name: 'jQuery',
-                        img: './images/jQuery.png'
+                        img: './images/tech-logos/jQuery.png'
                     },
                     {
                         name: 'NodeJs',
-                        img: './images/NodeJS.png'
+                        img: './images/tech-logos/NodeJS.png'
                     },
                     {
                         name: 'express',
-                        img: './images/express.png'
+                        img: './images/tech-logos/express.png'
                     },
                     {
                         name: 'mySQL',
-                        img: './images/mySQL.png'
+                        img: './images/tech-logos/mySQL.png'
                     }
                 ]
             };
@@ -203,7 +203,7 @@ export default function (dataName) {
         case 'budget':
             return {
                 bigViewTitle: 'Progressive Budget',
-                bigImg: './images/Budget-2.png',
+                bigImg: './images/project-big-previews/Budget-2.png',
                 bigAlt: 'my Progressive Budget App',
                 liveLink: 'https://simple-budget-tracker-site.herokuapp.com/',
                 repoLink: 'https://github.com/hockeyduck3/Progressive-Budget',
@@ -215,15 +215,15 @@ export default function (dataName) {
                     'fa-bootstrap',
                     {
                         name: 'NodeJs',
-                        img: './images/NodeJS.png'
+                        img: './images/tech-logos/NodeJS.png'
                     },
                     {
                         name: 'express',
-                        img: './images/express.png'
+                        img: './images/tech-logos/express.png'
                     },
                     {
                         name: 'MongoDB',
-                        img: './images/mongodb.png'
+                        img: './images/tech-logos/mongodb.png'
                     }
                 ]
             }
@@ -231,7 +231,7 @@ export default function (dataName) {
         case 'directory':
             return {
                 bigViewTitle: 'Employee Directory',
-                bigImg: './images/Directory-2.png',
+                bigImg: './images/project-big-previews/Directory-2.png',
                 bigAlt: 'my Employee Directory App',
                 liveLink: 'https://hockeyduck3.github.io/Employee-Directory/',
                 repoLink: 'https://github.com/hockeyduck3/Employee-Directory',
@@ -247,7 +247,7 @@ export default function (dataName) {
         case 'book':
             return {
                 bigViewTitle: 'Google Books Search',
-                bigImg: './images/Book-Search-2.png',
+                bigImg: './images/project-big-previews/Book-Search-2.png',
                 bigAlt: 'my Google Books Search App',
                 liveLink: 'https://gbooks-react-site.herokuapp.com/',
                 repoLink: 'https://github.com/hockeyduck3/React-Google-Books',
@@ -259,15 +259,15 @@ export default function (dataName) {
                     'fa-bootstrap',
                     {
                         name: 'NodeJs',
-                        img: './images/NodeJS.png'
+                        img: './images/tech-logos/NodeJS.png'
                     },
                     {
                         name: 'express',
-                        img: './images/express.png'
+                        img: './images/tech-logos/express.png'
                     },
                     {
                         name: 'MongoDB',
-                        img: './images/mongodb.png'
+                        img: './images/tech-logos/mongodb.png'
                     }
                 ]
             }
@@ -275,7 +275,7 @@ export default function (dataName) {
         default:
             return {
                 bigViewTitle: 'Change of Seasons',
-                bigImg: './images/COS-2.png',
+                bigImg: './images/project-big-previews/COS-2.png',
                 bigAlt: 'Change of Seasons Game',
                 liveLink: 'https://changeofseasonstcg.herokuapp.com/',
                 repoLink: 'https://github.com/Bounty556/ChangeOfSeasonsTCG',
@@ -287,19 +287,19 @@ export default function (dataName) {
                     'fa-bootstrap',
                     {
                         name: 'NodeJs',
-                        img: './images/NodeJS.png'
+                        img: './images/tech-logos/NodeJS.png'
                     },
                     {
                         name: 'express',
-                        img: './images/express.png'
+                        img: './images/tech-logos/express.png'
                     },
                     {
                         name: 'MongoDB',
-                        img: './images/mongodb.png'
+                        img: './images/tech-logos/mongodb.png'
                     },
                     {
                         name: 'Socket',
-                        img: './images/Socket.png'
+                        img: './images/tech-logos/Socket.png'
                     }
                 ]
             }

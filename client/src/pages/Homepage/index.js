@@ -22,7 +22,7 @@ class Homepage extends Component {
         const ghLink = document.getElementById('githubLink').classList;
 
         // Once this function is starting the card will slide out to the right
-        card.replace('animate__fadeIn', 'animate__backOutRight');
+        card.add('animate__animated', 'animate__backOutRight');
 
         // And the Github link will fade out
         ghLink.add('animate__animated', 'animate__fadeOut');
@@ -115,7 +115,7 @@ class Homepage extends Component {
                             </div>
                         ) : (
                             <div id='helloThereDiv'>
-                                <img id='helloThereGif' src='./images/hello-there.gif' alt='Obi-Wan Kenobi says, hello there!' />
+                                <img id='helloThereGif' src='./gifs/hello-there.gif' alt='Obi-Wan Kenobi says, hello there!' />
                             </div>
                         )}
                     </div>
