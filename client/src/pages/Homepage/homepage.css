@@ -93,7 +93,7 @@ a:hover {
     text-shadow: 1px 1px 0px #444, 1px 1px 3px #444;
 }
 
-.reactLinkLogo {
+#reactLinkLogo {
     margin-left: 5px;
 }
 
@@ -141,13 +141,13 @@ a:hover {
         display: flex;
     }
 
-    .reactLinkLogo {
-        font-size: 17px;
+    #reactLinkLogo {
+        font-size: 19px;
     }
 }
 
 @media (max-width: 320px) {
-    .reactLinkLogo {
-        font-size: 13px;
+    #reactLinkLogo {
+        font-size: 16px;
     }
 }
