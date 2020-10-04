@@ -29,10 +29,10 @@ function Nav() {
     }
 
     return (
-        <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
+        <nav className='navbar navbar-dark bg-dark'>
             
             {/* Logo / Homepage Link */}
-            <Link className='navbar-brand' to='/'>
+            <Link className='navbar-brand mx-auto' to='/'>
                 LJ Spencer
             </Link>
 
@@ -45,7 +45,12 @@ function Nav() {
                 aria-label='Toggle navigation'
             >
                 {!navbarToggleBtn ? (
-                    <span id='navbar-toggler' className='navbar-toggler-icon' onClick={changeFunc}></span>
+                    <span id='navbar-toggler' onClick={changeFunc} style={{
+                        display: 'inline-block',
+                        width: '1.5em',
+                        height: '1.5em',
+                        verticalAlign: 'middle',
+                    }}><i className='fas fa-bars fa-lg'></i></span>
                 ) : (
                     <span id='navbar-toggler' onClick={changeFunc} style={{
                         display: 'inline-block',
@@ -57,7 +62,7 @@ function Nav() {
             </button>
 
             <div className='collapse navbar-collapse' id='navbarNav'>
-                <ul className='navbar-nav ml-auto'>
+                <ul className='navbar-nav'>
 
                     {/* About */}
                     <li className='nav-item'>

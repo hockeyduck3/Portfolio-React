@@ -1,23 +1,49 @@
 .navbar {
-    background-color: #444 !important;
+    background-color: white !important;
     padding: 0;
-    border-bottom: 2px solid black;
 }
 
 .navbar-brand {
+    color: black !important;
     font-family: 'Yellowtail', cursive;
     padding: 10px 10px;
     margin-left: 5%;
     font-size: 34px;
+    text-align: center;
+}
+
+#navbar-toggler {
+    color: black;
+}
+
+.nav-link.active {
+    color: black !important;
+}
+
+.nav-link {
+    color: #444 !important;
+}
+
+.navbar-nav, .nav-link {
+    margin: 0 5px 0 auto;
+    text-align: right;
 }
 
 .nav-link {
     font-family: 'Kaushan Script', cursive;
-    font-size: 20px;
+    font-size: 50px;
 }
 
-.navbar-nav, .nav-link, #navbarBtn {
+.navbar-nav, #navbarBtn {
     margin-right: 25px;
+    border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 button:focus {
@@ -28,8 +54,12 @@ button:focus {
     transition: ease-out 0.3s;
 }
 
+.nav-link.active:hover {
+    color: black !important;
+}
+
 .nav-link:hover {
-    color: rgba(255, 255, 255, 0.767);
+    color: rgba(68, 68, 68, 0.767) !important;
     transition: ease-in 0.3s;
 }
 
@@ -40,17 +70,6 @@ button:focus {
 
 /* Tablets */
 @media(max-width: 991px) {
-    .navbar-nav, .nav-link {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .nav-link{
-        margin: 5px 48px;
-    }
-
     button {
         padding-left: 5%;
         font-size: 20px;
