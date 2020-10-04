@@ -44,21 +44,14 @@ function Nav() {
                 aria-expanded='false' 
                 aria-label='Toggle navigation'
             >
-                {!navbarToggleBtn ? (
-                    <span id='navbar-toggler' onClick={changeFunc} style={{
-                        display: 'inline-block',
-                        width: '1.5em',
-                        height: '1.5em',
-                        verticalAlign: 'middle',
-                    }}><i className='fas fa-bars fa-lg'></i></span>
-                ) : (
-                    <span id='navbar-toggler' onClick={changeFunc} style={{
-                        display: 'inline-block',
-                        width: '1.5em',
-                        height: '1.5em',
-                        verticalAlign: 'middle'
-                    }}><i className='fas fa-times fa-lg'></i></span>
-                )}
+                <span id='navbar-toggler' onClick={changeFunc} style={{
+                    display: 'inline-block',
+                    width: '1.5em',
+                    height: '1.5em',
+                    verticalAlign: 'middle',
+                }}>
+                    <i className='fas fa-bars fa-lg' />
+                </span>
             </button>
 
             <div className='collapse navbar-collapse' id='navbarNav'>
