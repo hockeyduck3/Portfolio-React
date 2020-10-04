@@ -11,6 +11,7 @@ function NotFound() {
         document.querySelector('.navbar').style.display = 'none';
         document.querySelector('footer').style.display = 'none';
         document.getElementById('notFoundCard').style.display = 'none'
+        document.title = 'LJ\'s | 404';
     }, []);
 
     function loaded() {

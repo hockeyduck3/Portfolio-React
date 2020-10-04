@@ -14,7 +14,7 @@ class Homepage extends Component {
     }
 
     componentDidMount() {
-        document.title = 'LJ\'s | Homepage'
+        document.title = 'LJ\'s | Homepage';
     }
 
     helloThereFunc = () => {
