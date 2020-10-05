@@ -9,7 +9,7 @@ import './homepage.css';
 
 class Homepage extends Component {
     state = {
-        title: 'About Me',
+        title: 'Hello there! I\'m LJ.',
         helloThere: false
     }
 
