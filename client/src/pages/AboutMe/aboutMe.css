@@ -6,6 +6,12 @@
     width: 25%;
 }
 
+#verticalLine {
+    float: left;
+    border-left: 3px solid black;
+    padding-right: 15px;
+}
+
 .text, #btn1 {
     color: black;
     font-size: 16px;

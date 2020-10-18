@@ -10,11 +10,18 @@ import './aboutMe.css';
 class Homepage extends Component {
     state = {
         title: 'Hello there! I\'m LJ.',
-        helloThere: false
+        helloThere: false,
+        lineHeight: 366
     }
 
     componentDidMount() {
         document.title = 'LJ\'s | Homepage';
+
+        setInterval(() => {
+            this.setState({
+                lineHeight: document.getElementById('profilePic').offsetHeight + 7
+            });
+        }, 1);
     }
 
     helloThereFunc = () => {
@@ -62,6 +69,7 @@ class Homepage extends Component {
 
     render() {
         const helloThere = this.state.helloThere;
+        const lineHeight = this.state.lineHeight;
 
         return (
             <Container fluid='-fluid'>
@@ -80,6 +88,8 @@ class Homepage extends Component {
                                     >
                                         <img id='profilePic' src='./images/Profile-Pic.jpg' alt="LJ holding his sister's dog Teeny" style={{visibility: 'hidden'}} />
                                     </OnImagesLoaded>
+
+                                    <div id='verticalLine' style={{height: lineHeight}} />
 
                                     <p className='text'> <button id='btn1' onClick={this.helloThereFunc}>Hello there!</button> My name is LJ <span role='img' aria-label='Smiling Emoji'>😁</span> and the Chihuahua in the picture with me is my sister's dog Tyne! (Pronounced Teeny) </p>
             
