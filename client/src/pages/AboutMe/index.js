@@ -18,9 +18,11 @@ class Homepage extends Component {
         document.title = 'LJ\'s | Homepage';
 
         setInterval(() => {
-            this.setState({
-                lineHeight: document.getElementById('profilePic').offsetHeight + 7
-            });
+            if (!this.state.helloThere) {
+                this.setState({
+                    lineHeight: document.getElementById('profilePic').offsetHeight + 7
+                });
+            }
         }, 1);
     }
 
