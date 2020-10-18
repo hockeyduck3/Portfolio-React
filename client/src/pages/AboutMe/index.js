@@ -5,7 +5,7 @@ import OnImagesLoaded from 'react-on-images-loaded';
 import Container from '../../components/Container/index';
 import Card from '../../components/Card/index';
 
-import './homepage.css';
+import './aboutMe.css';
 
 class Homepage extends Component {
     state = {
