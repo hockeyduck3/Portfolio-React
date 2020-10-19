@@ -7,7 +7,7 @@ import Card from '../../components/Card/index';
 
 import './aboutMe.css';
 
-class Homepage extends Component {
+class AboutMe extends Component {
     state = {
         title: 'Hello there! I\'m LJ.',
         helloThere: false,
@@ -79,53 +79,51 @@ class Homepage extends Component {
                     <div className='mainCard'>
                         {!helloThere ? (
                             <div>
-                                <Container>
-                                    <OnImagesLoaded
-                                        onLoaded={() => {
-                                            document.getElementById('profilePic').style.visibility = 'visible';
-                                            document.getElementById('profilePic').classList.add('animate__animated', 'animate__flipInY', 'animate__delay-0.5s');
-                                        }}
-                                        onTimeout={() => document.getElementById('profilePic').classList.add('animate__animated', 'animate__flipInY')}
-                                        timeout={5000}
-                                    >
-                                        <img id='profilePic' src='./images/Profile-Pic.jpg' alt="LJ holding his sister's dog Teeny" style={{visibility: 'hidden'}} />
-                                    </OnImagesLoaded>
+                                <OnImagesLoaded
+                                    onLoaded={() => {
+                                        document.getElementById('profilePic').style.visibility = 'visible';
+                                        document.getElementById('profilePic').classList.add('animate__animated', 'animate__flipInY', 'animate__delay-0.5s');
+                                    }}
+                                    onTimeout={() => document.getElementById('profilePic').classList.add('animate__animated', 'animate__flipInY')}
+                                    timeout={5000}
+                                >
+                                    <img id='profilePic' src='./images/Profile-Pic.jpg' alt="LJ holding his sister's dog Teeny" style={{visibility: 'hidden'}} />
+                                </OnImagesLoaded>
 
-                                    <div id='verticalLine' style={{height: lineHeight}} />
+                                <div id='verticalLine' style={{height: lineHeight}} />
 
-                                    <p className='text'> <button id='btn1' onClick={this.helloThereFunc}>Hello there!</button> My name is LJ <span role='img' aria-label='Smiling Emoji'>😁</span> and the Chihuahua in the picture with me is my sister's dog Tyne! (Pronounced Teeny) </p>
-            
-                                    <p className='text'>I'm a Salt Lake City native, and recent Full Stack Web Developer graduate from the University of Utah.</p>
+                                <p className='text'> <button id='btn1' onClick={this.helloThereFunc}>Hello there!</button> My name is LJ <span role='img' aria-label='Smiling Emoji'>😁</span> and the Chihuahua in the picture with me is my sister's dog Tyne! (Pronounced Teeny) </p>
+        
+                                <p className='text'>I'm a Salt Lake City native, and recent Full Stack Web Developer graduate from the University of Utah.</p>
 
-                                    <p className='text'>My skill set includes HTML, Handlebars, CSS, Bootstrap, Javascript, jQuery, Nodejs, Express, mySQL, MongoDB, Git, and React.</p>
-            
-                                    <p className='text'>If you want to see some of the projects I've worked on, head over to my <Link to='/Portfolio' className='homepageLinks'>Portfolio page</Link></p>
-            
-                                    <p className='text'>In my free time I like to go to the movies 🎞, hang out and play games with my friends <span role='img' aria-label='Xbox Controller Emoji'>🎮</span>, tinker with computers and other tech <span role='img' aria-label='Phone Emoji'>📱</span>, and on occasion, I'll travel down to Las Vegas to watch some hockey. Go Knights Go! ⚔</p>
-            
-                                    <p className='text'>If you want to know more about me, feel free to reach out to me on my <Link to='/Contact' className='homepageLinks'>Contact page</Link></p>
-            
-                                    <p className='text'>Or feel free to text me at <strong>801-867-8728</strong></p>
+                                <p className='text'>My skill set includes HTML, Handlebars, CSS, Bootstrap, Javascript, jQuery, Nodejs, Express, mySQL, MongoDB, Git, and React.</p>
+        
+                                <p className='text'>If you want to see some of the projects I've worked on, head over to my <Link to='/Portfolio' className='homepageLinks'>Portfolio page</Link></p>
+        
+                                <p className='text'>In my free time I like to go to the movies 🎞, hang out and play games with my friends <span role='img' aria-label='Xbox Controller Emoji'>🎮</span>, tinker with computers and other tech <span role='img' aria-label='Phone Emoji'>📱</span>, and on occasion, I'll travel down to Las Vegas to watch some hockey. Go Knights Go! ⚔</p>
+        
+                                <p className='text'>If you want to know more about me, feel free to reach out to me on my <Link to='/Contact' className='homepageLinks'>Contact page</Link></p>
+        
+                                <p className='text'>Or feel free to text me at <strong>801-867-8728</strong></p>
 
-                                    <p className='text socialText'>You can also reach me on Social Media!</p>
+                                <p className='text socialText'>You can also reach me on Social Media!</p>
 
-                                    <div className='homepageSocial'>
-                                        {/* Twitter Link */}
-                                        <a href='https://twitter.com/ljspencer97' target='_blank' rel='noopener noreferrer'>
-                                            <i id='twitter2' className='fab fa-twitter-square'></i>
-                                        </a>
+                                <div className='homepageSocial'>
+                                    {/* Twitter Link */}
+                                    <a href='https://twitter.com/ljspencer97' target='_blank' rel='noopener noreferrer'>
+                                        <i id='twitter2' className='fab fa-twitter-square'></i>
+                                    </a>
 
-                                        {/* Github Link */}
-                                        <a id='github2' href='https://github.com/hockeyduck3' target='_blank' rel='noopener noreferrer'>
-                                            <i className='fab fa-github-square'></i>
-                                        </a>
+                                    {/* Github Link */}
+                                    <a id='github2' href='https://github.com/hockeyduck3' target='_blank' rel='noopener noreferrer'>
+                                        <i className='fab fa-github-square'></i>
+                                    </a>
 
-                                        {/* LinkedIn Link */}
-                                        <a id='linkedin2' href='https://linkedin.com/in/lj-spencer' target='_blank' rel='noopener noreferrer'>
-                                            <i className='fab fa-linkedin'></i>
-                                        </a>
-                                    </div>
-                                </Container>
+                                    {/* LinkedIn Link */}
+                                    <a id='linkedin2' href='https://linkedin.com/in/lj-spencer' target='_blank' rel='noopener noreferrer'>
+                                        <i className='fab fa-linkedin'></i>
+                                    </a>
+                                </div>
                             </div>
                         ) : (
                             <div id='helloThereDiv'>
@@ -134,14 +132,9 @@ class Homepage extends Component {
                         )}
                     </div>
                 </Card>
-
-                <div id='githubLink'>
-                    <a href='https://github.com/hockeyduck3/Portfolio-React' target='_blank' rel='noopener noreferrer'>Click here for my website's Repo <i className='fab fa-github' /></a>
-                    <p id='homepageReactLink'>My portfolio was built using <a id='reactLink' href='https://reactjs.org/' target='_blank' rel='noopener noreferrer'>React <i className='fab fa-react' id='reactLinkLogo' /></a></p>
-                </div>
             </Container>
         )
     }
 }
 
-export default Homepage;
+export default AboutMe;
