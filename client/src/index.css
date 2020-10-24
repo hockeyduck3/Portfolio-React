@@ -16,3 +16,10 @@ body {
 a:hover {
     text-decoration: none;
 }
+
+.line {
+    background-color: black;
+    border: none;
+    height: 1px;
+    margin-bottom: 1rem;
+}
