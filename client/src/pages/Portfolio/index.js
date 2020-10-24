@@ -176,7 +176,7 @@ class Portfolio extends Component {
                         </div>
                     </div>
                 ) : (
-                    <Card title='bigView' id='portfolio' bigTitle={this.state.bigViewTitle} backClick={this.displayPreview}>
+                    <Card title='bigView' id='portfolio' bigTitle={this.state.bigViewTitle} func={this.displayPreview}>
                         <Container>
                             <OnImagesLoaded
                                 onLoaded={() => this.onLoadFunc('portfolioBigImg', 'bigPicture', 'flipInX', '0.9s')}

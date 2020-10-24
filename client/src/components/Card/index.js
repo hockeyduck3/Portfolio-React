@@ -4,41 +4,57 @@ import { Link } from 'react-router-dom';
 import './style.css';
 
 function Card(props) {
-    if (props.title === 'bigView') {
+    const {title, id, bigTitle, func, bodyId, children} = props;
+
+    if (title === 'bigView') {
         return (
             <div className='card animate__animated animate__fadeIn' id='card'>
                 <div className='card-body'>
-                    <Link to='' className="backBtn" onClick={props.backClick}><i className='fas fa-chevron-left'></i></Link>
+                    <Link to='' className="backBtn" onClick={func}><i className='fas fa-chevron-left'></i></Link>
 
-                    <h2 className='cardTitle' id={props.id + 'Title'}>{props.bigTitle}</h2>
+                    <h2 className='cardTitle' id={id + 'Title'}>{bigTitle}</h2>
     
                     <hr className='line'></hr>
     
-                    {props.children}
+                    {children}
+                </div>
+            </div>
+        )
+    }
+
+    else if (title === 'Hello there! I\'m LJ.') {
+        return (
+            <div className='card' id={id ? id : 'card'}>
+                <div className='card-body' id={bodyId ? bodyId : ''}>
+                    <h2 className='cardTitle' id={id + 'Title'}><a id='helloThereBtn' onClick={func}>Hello there!</a> I'm LJ.</h2>
+    
+                    <hr className='line'></hr>
+    
+                    {children}
                 </div>
             </div>
         )
     }
     
-    else if (props.title !== 'messageSent' && props.title !== '404') {
+    else if (title !== 'messageSent' && title !== '404') {
         return (
-            <div className='card' id={props.id ? props.id : 'card'}>
-                <div className='card-body' id={props.bodyId ? props.bodyId : ''}>
-                    <h2 className='cardTitle' id={props.id + 'Title'}>{props.title}</h2>
+            <div className='card' id={id ? id : 'card'}>
+                <div className='card-body' id={bodyId ? bodyId : ''}>
+                    <h2 className='cardTitle' id={id + 'Title'}>{title}</h2>
     
                     <hr className='line'></hr>
     
-                    {props.children}
+                    {children}
                 </div>
             </div>
         )
-    } 
+    }
     
     else {
         return (
-            <div className='card' id={props.id ? props.id : 'card'}>
+            <div className='card' id={id ? id : 'card'}>
                 <div className='card-body'>    
-                    {props.children}
+                    {children}
                 </div>
             </div>
         )
