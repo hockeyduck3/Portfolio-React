@@ -1,6 +1,7 @@
 .navbar {
     background-color: white !important;
     padding: 0;
+    box-shadow: 0px 0px 8px -3px black;
 }
 
 .navbar-brand {
