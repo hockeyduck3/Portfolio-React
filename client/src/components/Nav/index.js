@@ -32,7 +32,7 @@ function Nav() {
         <nav className='navbar navbar-dark bg-dark'>
             
             {/* Logo / Homepage Link */}
-            <Link className='navbar-brand mx-auto' to='/'>
+            <Link className='navbar-brand' to='/'>
                 LJ Spencer
             </Link>
 

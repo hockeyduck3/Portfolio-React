@@ -78,11 +78,14 @@ class AboutMe extends Component {
                                     onTimeout={() => document.getElementById('profilePic').classList.add('animate__animated', 'animate__flipInY')}
                                     timeout={5000}
                                 >
-                                    <img id='profilePic' src='./images/Profile-Pic.jpg' alt="LJ holding his sister's dog Teeny" style={{visibility: 'hidden'}} />
+                                    <div className='item'>
+                                        <img id='profilePic' src='./images/Profile-Pic.jpg' alt="LJ holding his sister's dog Teeny" style={{visibility: 'hidden'}} />
+                                        <p className='text caption'>The chihuahua in the picture with me is my sister's dog Tyne! (Pronounced Teeny)</p>
+                                    </div>
                                 </OnImagesLoaded>
 
-                                <p className='text'> <button id='btn1' onClick={this.helloThereFunc}>Hello there!</button> My name is LJ <span role='img' aria-label='Smiling Emoji'>😁</span> and the Chihuahua in the picture with me is my sister's dog Tyne! (Pronounced Teeny) </p>
-        
+                                {/* <p className='text'> <button id='btn1' onClick={this.helloThereFunc}>Hello there!</button> My name is LJ <span role='img' aria-label='Smiling Emoji'>😁</span> and the Chihuahua in the picture with me is my sister's dog Tyne! (Pronounced Teeny) </p> */}
+
                                 <p className='text'>I'm a Salt Lake City native, and recent Full Stack Web Developer graduate from the University of Utah.</p>
 
                                 <p className='text'>My skill set includes HTML, Handlebars, CSS, Bootstrap, Javascript, jQuery, Nodejs, Express, mySQL, MongoDB, Git, and React.</p>
