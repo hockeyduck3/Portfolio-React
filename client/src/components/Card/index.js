@@ -26,9 +26,9 @@ function Card(props) {
         return (
             <div className='card' id={id ? id : 'card'}>
                 <div className='card-body' id={bodyId ? bodyId : ''}>
-                    <h2 className='cardTitle' id={id + 'Title'}><a id='helloThereBtn' onClick={func}>Hello there!</a> I'm LJ.</h2>
+                    <h2 className='cardTitle animate__animated animate__fadeIn animate__slow' id={id + 'Title'}><a id='helloThereBtn' onClick={func}>Hello there!</a> I'm LJ.</h2>
     
-                    <hr className='line'></hr>
+                    <hr className='line animate__animated animate__fadeIn animate__delay-1s animate__slow'></hr>
     
                     {children}
                 </div>
