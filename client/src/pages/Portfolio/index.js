@@ -73,8 +73,6 @@ class Portfolio extends Component {
                 this.setState({
                     bigView: true
                 });
-
-                document.querySelector('body').scrollTo(0, 0);
             }, 600);
 
     }
