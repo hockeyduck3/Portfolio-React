@@ -16,10 +16,6 @@ class Contact extends Component {
         status200: false
     }
 
-    componentDidMount() {
-        document.title = 'LJ\'s | Contact';
-    }
-
     inputFunc = event => {
         const { name, value } = event.target;
 

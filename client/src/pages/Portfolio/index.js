@@ -25,10 +25,6 @@ class Portfolio extends Component {
         techUsed: []
     }
 
-    componentDidMount() {
-        document.title = 'LJ\'s | Portfolio';
-    }
-
     handleClick = event => {
         const dataName = event.currentTarget.getAttribute('data-name');
 
