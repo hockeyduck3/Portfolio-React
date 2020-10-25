@@ -13,20 +13,8 @@ function Nav() {
     body.addEventListener('click', function() {
         if (navbar.length === 0) {
             document.querySelector('.navbar-toggler').click();
-
-            if (navbarToggleBtn) {
-                changeFunc();
-            }
         }
     });
-
-    function changeFunc() {
-        if (!navbarToggleBtn) {
-            setNavbarToggleBtn(true);
-        } else {
-            setNavbarToggleBtn(false);
-        }
-    }
 
     return (
         <nav className='navbar navbar-dark bg-dark'>
@@ -44,7 +32,7 @@ function Nav() {
                 aria-expanded='false' 
                 aria-label='Toggle navigation'
             >
-                <span id='navbar-toggler' onClick={changeFunc} style={{
+                <span id='navbar-toggler' style={{
                     display: 'inline-block',
                     width: '1.5em',
                     height: '1.5em',
@@ -59,22 +47,22 @@ function Nav() {
 
                     {/* About */}
                     <li className='nav-item'>
-                        <NavLink activeClassName='active' exact to='/' className='nav-link'>About</NavLink>
+                        <NavLink exact to='/' className='nav-link active'>About</NavLink>
                     </li>
 
                     {/* Portfolio Link */}
                     <li className='nav-item'>
-                        <NavLink activeClassName='active' to='/Portfolio' className='nav-link'>Portfolio</NavLink>
+                        <NavLink to='/Portfolio' className='nav-link active'>Portfolio</NavLink>
                     </li>
 
                     {/* Resume Link */}
                     <li className='nav-item'>
-                        <a href={Resume} className='nav-link' target='_blank' rel='noopener noreferrer'>Resume</a>
+                        <a href={Resume} className='nav-link active' target='_blank' rel='noopener noreferrer'>Resume</a>
                     </li>
 
                     {/* Contact Link */}
                     <li className='nav-item'>
-                        <NavLink activeClassName='active' to='/Contact' className='nav-link'>Contact</NavLink>
+                        <NavLink to='/Contact' className='nav-link active'>Contact</NavLink>
                     </li>
                 </ul>
             </div>
