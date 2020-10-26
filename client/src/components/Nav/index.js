@@ -1,35 +1,42 @@
 import React, { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { HashLink as NavLink } from 'react-router-hash-link';
 
 import Resume from '../../PDF/LJ-Spencer-Resume-2020.pdf';
 import './style.css';
 
 function Nav() {
-    const [navbarToggleBtn, setNavbarToggleBtn] = useState(false);
-
     const body = document.body;
     const navbar = document.getElementsByClassName('collapsed');
 
-    body.addEventListener('click', function() {
+    body.addEventListener('click', function () {
         if (navbar.length === 0) {
             document.querySelector('.navbar-toggler').click();
         }
     });
 
+    function scrollTo(element) {
+        document.querySelector('.navbar-toggler').click();
+
+        setTimeout(() => {
+            document.getElementById(element).scrollIntoView({ behavior: 'smooth' });
+        }, 300);
+    }
+
     return (
         <nav className='navbar navbar-dark bg-dark'>
-            
+
             {/* Logo / Homepage Link */}
             <Link className='navbar-brand' to='/'>
                 LJ Spencer
             </Link>
 
-            <button 
-                id='navbarBtn' 
-                className='navbar-toggler collapsed' 
-                type='button' data-toggle='collapse' 
-                data-target='#navbarNav' aria-controls='navbarNav' 
-                aria-expanded='false' 
+            <button
+                id='navbarBtn'
+                className='navbar-toggler collapsed'
+                type='button' data-toggle='collapse'
+                data-target='#navbarNav' aria-controls='navbarNav'
+                aria-expanded='false'
                 aria-label='Toggle navigation'
             >
                 <span id='navbar-toggler' style={{
@@ -45,24 +52,24 @@ function Nav() {
             <div className='collapse navbar-collapse' id='navbarNav'>
                 <ul className='navbar-nav'>
 
-                    {/* About */}
-                    <li className='nav-item'>
-                        <NavLink exact to='/' className='nav-link active'>About</NavLink>
-                    </li>
-
-                    {/* Portfolio Link */}
-                    <li className='nav-item'>
-                        <NavLink to='/Portfolio' className='nav-link active'>Portfolio</NavLink>
-                    </li>
-
                     {/* Resume Link */}
                     <li className='nav-item'>
                         <a href={Resume} className='nav-link active' target='_blank' rel='noopener noreferrer'>Resume</a>
                     </li>
 
+                    {/* Portfolio Link */}
+                    <li className='nav-item'>
+                        {/* Depending on if the user is viewing the website on mobile, or desktop. */}
+                        {window.screen.width < 1024 ? (
+                            <NavLink to='/#portfolio2' scroll={el => scrollTo(el.id)} className='nav-link active'>Portfolio</NavLink>
+                            ) : (
+                            <NavLink to='/#portfolio' scroll={el => scrollTo(el.id)} className='nav-link active'>Portfolio</NavLink>
+                        )}
+                    </li>
+
                     {/* Contact Link */}
                     <li className='nav-item'>
-                        <NavLink to='/Contact' className='nav-link active'>Contact</NavLink>
+                        <NavLink to='/#contact' scroll={el => scrollTo(el.id)} className='nav-link active'>Contact</NavLink>
                     </li>
                 </ul>
             </div>
