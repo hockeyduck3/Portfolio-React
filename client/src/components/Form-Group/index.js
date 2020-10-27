@@ -1,7 +1,7 @@
 import React from 'react';
 
 function FormGroup(props) {
-    const {name, label, children} = props;
+    const { name, label, children } = props;
 
     if (name !== 'submit') {
         return (
@@ -10,7 +10,7 @@ function FormGroup(props) {
                     {label}
                 </label>
                 <p id={name + 'Error'}></p>
-    
+
                 <div id={name + 'Col'} className='col-md-12'>
                     {children}
                 </div>

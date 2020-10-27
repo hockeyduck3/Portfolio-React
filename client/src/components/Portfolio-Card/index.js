@@ -4,14 +4,16 @@ import { Link } from 'react-router-dom';
 import './portfolio-card.css';
 
 function PortfolioCard(props) {
+    const { data, handleClick, img, alt, name } = props;
+
     return (
-        <div className='col-lg-3 project' data-name={props.data} onClick={props.handleClick}>
+        <div className='col-lg-3 project' data-name={data} onClick={handleClick}>
             <Link to='' onClick={event => event.preventDefault()}>
-                <img src={props.img} alt={`Screenshot of My ${props.alt}`}/>
-                <p>{props.name}</p>
+                <img src={img} alt={`Screenshot of My ${alt}`} />
+                <p>{name}</p>
             </Link>
         </div>
     )
-} 
+}
 
 export default PortfolioCard;

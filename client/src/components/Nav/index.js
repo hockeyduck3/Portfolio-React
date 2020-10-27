@@ -62,7 +62,7 @@ function Nav() {
                         {/* Depending on if the user is viewing the website on mobile, or desktop. */}
                         {window.screen.width < 1024 ? (
                             <NavLink to='/#portfolio2' scroll={el => scrollTo(el.id)} className='nav-link active'>Portfolio</NavLink>
-                            ) : (
+                        ) : (
                             <NavLink to='/#portfolio' scroll={el => scrollTo(el.id)} className='nav-link active'>Portfolio</NavLink>
                         )}
                     </li>
