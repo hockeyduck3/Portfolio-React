@@ -14,7 +14,7 @@ function Card(props) {
 
                     <h2 className='cardTitle' id={id + 'Title'}>{bigTitle}</h2>
 
-                    <hr className='line'></hr>
+                    <hr className='line' />
 
                     {children}
                 </div>
@@ -28,7 +28,7 @@ function Card(props) {
                 <div className='card-body' id={bodyId ? bodyId : ''}>
                     <h2 className='cardTitle animate__animated animate__fadeIn animate__slow' id={id + 'Title'}><a id='helloThereBtn' onClick={func}>Hello there!</a> I'm LJ.</h2>
 
-                    <hr className='line animate__animated animate__fadeIn animate__delay-1s animate__slow'></hr>
+                    <hr className='line animate__animated animate__fadeIn animate__delay-1s animate__slow' />
 
                     {children}
                 </div>
@@ -42,7 +42,7 @@ function Card(props) {
                 <div className='card-body' id={bodyId ? bodyId : ''}>
                     <h2 className='cardTitle' id={id + 'Title'}>{title}</h2>
 
-                    <hr className='line'></hr>
+                    <hr className='line' />
 
                     {children}
                 </div>
