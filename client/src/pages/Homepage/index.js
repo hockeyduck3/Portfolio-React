@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from '../../components/Container/index';
 
 import AboutMe from '../AboutMe/index';
 import Portfolio from '../Portfolio/index';
