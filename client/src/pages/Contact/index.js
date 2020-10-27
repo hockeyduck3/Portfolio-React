@@ -123,7 +123,6 @@ class Contact extends Component {
     }
 
     sendEmail = () => {
-        
         const form = document.getElementById('my-form');
         
         const data = new FormData(form);
@@ -140,16 +139,15 @@ class Contact extends Component {
 
                 this.emailSuccess();
             }).catch(err => {
-                this.emailFail();
-
                 console.log(err);
+                this.emailFail();
             });
         }, 1500);
 
     }
 
     emailSuccess = () => {
-        const card = document.getElementById('card').classList;
+        const card = document.getElementById('contact').classList;
 
         card.replace('animate__bounceOutUp', 'animate__bounceInDown');
 
@@ -238,7 +236,7 @@ class Contact extends Component {
                                             className='form-control' 
                                             name='message' 
                                             placeholder='Enter your message here.' 
-                                            rows='3'
+                                            rows='4'
                                             onChange={this.inputFunc}
                                             value={this.state.message}
                                         />
