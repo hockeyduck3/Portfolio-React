@@ -1,16 +1,18 @@
 import React from 'react';
 
 function FormGroup(props) {
-    if (props.name !== 'submit') {
+    const {name, label, children} = props;
+
+    if (name !== 'submit') {
         return (
             <div className='form-group'>
-                <label className='col-sm-12 control-label' htmlFor={props.name}>
-                    {props.label}
+                <label className='col-sm-12 control-label' htmlFor={name}>
+                    {label}
                 </label>
-                <p id={props.name + 'Error'}></p>
+                <p id={name + 'Error'}></p>
     
-                <div id={props.name + 'Col'} className='col-md-10'>
-                    {props.children}
+                <div id={name + 'Col'} className='col-md-12'>
+                    {children}
                 </div>
             </div>
         )
@@ -18,7 +20,7 @@ function FormGroup(props) {
         return (
             <div className='form-group'>
                 <div className='col-md-12 text-right'>
-                    {props.children}
+                    {children}
                 </div>
             </div>
         )
