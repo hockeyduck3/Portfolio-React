@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import {HashLink as Link} from 'react-router-hash-link';
 import OnImagesLoaded from 'react-on-images-loaded';
 
 import Container from '../../components/Container/index';
@@ -115,17 +116,17 @@ class AboutMe extends Component {
                                     <div id='textSection' style={{ visibility: 'hidden' }}>
                                         <p className='text'>I'm a Salt Lake City native, and recent Full Stack Web Developer graduate from the University of Utah.</p>
 
-                                        <p className='text'>My skill set includes HTML, Handlebars, CSS, Bootstrap, Javascript, jQuery, Nodejs, Express, mySQL, MongoDB, Git, and React.</p>
+                                        <p className='text'>My skill set includes HTML, Handlebars, CSS, Bootstrap, Javascript, jQuery, Nodejs, Express, mySQL, MongoDB, Git, and React. (This website was actually built using React.)</p>
 
-                                        <p className='text'>If you want to see some of the projects I've worked on, head over to my <Link to='/Portfolio' className='homepageLinks'>Portfolio page</Link></p>
+                                        <p className='text'><Link smooth to='/#portfolio' className='homepageLinks'>Click here</Link> to see some of the projects that I have worked on! Or you can just scroll down, I'll leave that choice up to you.</p>
 
-                                        <p className='text'>In my free time I like to go to the movies 🎞, hang out and play games with my friends <span role='img' aria-label='Xbox Controller Emoji'>🎮</span>, tinker with computers and other tech <span role='img' aria-label='Phone Emoji'>📱</span>, and on occasion, I'll travel down to Las Vegas to watch some hockey. Go Knights Go! ⚔</p>
+                                        <p className='text'>In my free time I like to go to the movies 🎞, help others with their technology woes, hang out and play games with my friends <span role='img' aria-label='Xbox Controller Emoji'>🎮</span>, tinker with computers and other tech <span role='img' aria-label='Phone Emoji'>📱</span>, and on occasion I'll travel down to Las Vegas to watch some hockey. Go Knights Go! ⚔</p>
 
-                                        <p className='text'>If you want to know more about me, feel free to reach out to me on my <Link to='/Contact' className='homepageLinks'>Contact page</Link></p>
+                                        <p className='text'>If you want to know more about me, feel free to reach out to me using my <Link smooth to='/#contact' className='homepageLinks'>Contact card</Link> below!</p>
 
-                                        <p className='text'>Or feel free to text me at <strong>801-867-8728</strong></p>
+                                        <p className='text'>Or if you don't want to use the contact card below you can always reach out to me directly at <em><a href='mailTo:hockeyduck3@gmail.com' className='homepageLinks'>hockeyduck3@gmail.com</a></em>. Or call/text me at 801-867-8728.</p>
 
-                                        <p className='text socialText'>You can also reach me on Social Media!</p>
+                                        <p className='text socialText'>Another way you can reach me is via Social Media!</p>
 
                                         <div className='homepageSocial'>
                                             {/* Twitter Link */}

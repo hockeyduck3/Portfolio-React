@@ -18,12 +18,11 @@
     width: 100%;
 }
 
-.text, #btn1 {
+.text {
     color: black;
     font-size: 16px;
     line-height: 1.6em;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
 }
 
 .caption {
@@ -61,7 +60,7 @@ a:hover {
 .homepageSocial {
     display: none;
     flex-direction: row;
-    font-size: 50px;
+    font-size: 55px;
     justify-content: space-evenly;
 }
 
@@ -79,7 +78,7 @@ a:hover {
 
 #githubLink {
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -114,7 +113,7 @@ a:hover {
 /* Mobile */
 @media (max-width: 640px) {
     h2 {
-        font-size: 45px;
+        font-size: 38px;
         text-align: center;
     }
 
@@ -127,8 +126,8 @@ a:hover {
         margin: 5px 0px 5px 5px;
     }
 
-    .text, #btn1 {
-        font-size: 17px;
+    .text {
+        font-size: 16px;
     }
 
     .caption {
@@ -142,6 +141,7 @@ a:hover {
 
     .socialText {
         visibility: visible;
+        margin-bottom: 0;
     }
 
     .homepageSocial {
@@ -154,6 +154,10 @@ a:hover {
 }
 
 @media (max-width: 320px) {
+    h2 {
+        font-size: 31px;
+    }
+
     #reactLinkLogo {
         font-size: 16px;
     }

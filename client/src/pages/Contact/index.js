@@ -257,8 +257,6 @@ class Contact extends Component {
                         <p id='messageSent'>Message Sent!</p>
                     </Card>
                 )}
-
-                <p id='emailText'>If you don't want to use the above contact form, you can reach out to me directly at <em><a href='mailTo:hockeyduck3@gmail.com'>hockeyduck3@gmail.com</a></em></p>
             </Container>
         )
     }

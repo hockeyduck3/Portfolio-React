@@ -58,9 +58,10 @@ footer p{
 
 @media (max-width: 640px) {
     footer {
-        height: 5rem;
+        height: 2.5rem;
         font-size: 16px;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
     .footerSocial {
