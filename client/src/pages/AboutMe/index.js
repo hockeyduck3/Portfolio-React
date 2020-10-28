@@ -118,7 +118,11 @@ class AboutMe extends Component {
 
                                         <p className='text'>My skill set includes HTML, Handlebars, CSS, Bootstrap, Javascript, jQuery, Nodejs, Express, mySQL, MongoDB, Git, and React. (This website was actually built using React.)</p>
 
-                                        <p className='text'><Link smooth to='/#portfolio' className='homepageLinks'>Click here</Link> to see some of the projects that I have worked on! Or you can just scroll down, I'll leave that choice up to you.</p>
+                                        {window.screen.width < 1024 ? (
+                                            <p className='text'><Link smooth to='/#portfolio2' className='homepageLinks'>Click here</Link> to see some of the projects that I have worked on! Or you can just scroll down, I'll leave that choice up to you.</p>
+                                        ) : (
+                                            <p className='text'><Link smooth to='/#portfolio' className='homepageLinks'>Click here</Link> to see some of the projects that I have worked on! Or you can just scroll down, I'll leave that choice up to you.</p>
+                                        )}
 
                                         <p className='text'>In my free time I like to go to the movies 🎞, help others with their technology woes, hang out and play games with my friends <span role='img' aria-label='Xbox Controller Emoji'>🎮</span>, tinker with computers and other tech <span role='img' aria-label='Phone Emoji'>📱</span>, and on occasion I'll travel down to Las Vegas to watch some hockey. Go Knights Go! ⚔</p>
 
