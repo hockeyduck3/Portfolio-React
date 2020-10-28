@@ -10,7 +10,7 @@ function Card(props) {
         return (
             <div className='card animate__animated animate__fadeIn' id='card'>
                 <div className='card-body'>
-                    <Link to='' className="backBtn" onClick={func}><i className='fas fa-chevron-left'></i></Link>
+                    <Link to='' className='backBtn' onClick={func}><i className='fas fa-chevron-left'></i></Link>
 
                     <h2 className='cardTitle' id={id + 'Title'}>{bigTitle}</h2>
 

@@ -58,19 +58,21 @@ class Portfolio extends Component {
         let card;
 
         if (width < 1024) {
-            card = document.getElementById('portfolio2').classList;
+            card = document.getElementById('portfolio2');
+            card.scrollIntoView({ behavior: 'smooth' });
+
         } else {
-            card = document.getElementById('portfolio').classList;
+            card = document.getElementById('portfolio');
         }
 
-        card.add('animate__animated', 'animate__fadeOut');
+        card.classList.add('animate__animated', 'animate__fadeOut');
+
 
             setTimeout(() => {
                 this.setState({
                     bigView: true
                 });
             }, 600);
-
     }
 
     displayPreview = event => {
