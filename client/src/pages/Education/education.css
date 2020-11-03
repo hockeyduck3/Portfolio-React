@@ -1,3 +1,29 @@
-#utah {
+#utah, #beau {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#utahImg, #beauImg {
     margin: 30px 0;
+    width: 25%;
+}
+
+#beauImg {
+    width: 30%;
+}
+
+.utahPara, .beauPara {
+    font-size: 20px;
+    margin: 30px 25px;
+}
+
+.utahPara {
+    border-left: 2px dotted black;
+    padding-left: 25px;
+}
+
+.beauPara {
+    border-right: 2px dotted black;
+    padding-right: 25px;
 }

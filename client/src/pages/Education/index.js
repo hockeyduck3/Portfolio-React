@@ -10,14 +10,18 @@ function Education() {
         <Container fluid='-fluid'>
             <Card title='Education' id='education'>
                 <Container fluid='-fluid'>
+
                     <div id='utah'>
-                        <img src='../images/badge.png' alt='Certificate Badge from University of Utah' />
+                        <img src='../images/badge.png' alt='Certificate Badge from University of Utah' id='utahImg' />
+                        <p className='text utahPara'>A 24-week intensive program focused on gaining technical programming skills in HTML5, CSS3, Javascript, JQuery, Bootstrap, Node Js, MySQL, MongoDB, Express, Handlebars & ReactJS. </p>
                     </div>
 
                     <hr className='line' />
 
+
                     <div id='beau'>
-                        <img src='../images/BEAU.jpg' alt='Logo of Broadview Entertainment Arts University' style={{ float: 'right' }} />
+                        <p className='text beauPara'>Took courses in Basic Web Design, Intro to Photoshop, Intro to Film, Digital Film Editing, and Intro to Game Development.</p>
+                        <img src='../images/BEAU.jpg' alt='Logo of Broadview Entertainment Arts University' id='beauImg' />
                     </div>
                 </Container>
             </Card>
