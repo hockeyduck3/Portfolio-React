@@ -2,6 +2,7 @@ import React from 'react';
 
 import AboutMe from '../AboutMe/index';
 import Portfolio from '../Portfolio/index';
+import Education from '../Education/index';
 import Contact from '../Contact/index';
 
 function Homepage() {
@@ -9,6 +10,7 @@ function Homepage() {
         <div>
             <AboutMe />
             <Portfolio />
+            <Education />
             <Contact />
             <div id='githubLink'>
                 <a href='https://github.com/hockeyduck3/Portfolio-React' target='_blank' rel='noopener noreferrer'>Click here for my website's Repo <i className='fab fa-github' /></a>
