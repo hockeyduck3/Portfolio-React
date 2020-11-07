@@ -13,13 +13,13 @@ function Education() {
 
                     <div id='utah'>
                         <img src='../images/badge.png' alt='Certificate Badge from University of Utah' id='utahImg' />
-                        <p className='text utahPara'>
+                        <div className='text utahPara'>
                             <p id='utahTitle'>
                                 University of Utah, Web Development Bootcamp.
-                                <p id='utahDate'>Aug, 2020</p>
+                                <span id='utahDate'>Aug, 2020</span>
                             </p>
                             A 24-week intensive program focused on gaining technical programming skills in HTML5, CSS3, Javascript, JQuery, Bootstrap, Node Js, MySQL, MongoDB, Express, Handlebars & ReactJS.
-                        </p>
+                        </div>
                     </div>
 
                     <hr className='line' />
