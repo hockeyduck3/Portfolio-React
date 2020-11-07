@@ -26,7 +26,13 @@ function Education() {
 
 
                     <div id='beau'>
-                        <p className='text beauPara'>Took courses in Basic Web Design, Intro to Photoshop, Intro to Film, Digital Film Editing, and Intro to Game Development.</p>
+                        <div className='text beauPara'>
+                            <p id='beauTitle'>
+                                Broadview Entertainment Arts University, Digital Film.
+                                <span id='beauDate'> Jan 2016 - Mar 2017</span>
+                            </p>
+                            I took courses in Basic Web Design, Intro to Photoshop, Intro to Film, Digital Film Editing, and Intro to Game Development. Sadly the school shut down before I was able to finish getting my Degree.
+                        </div>
                         <img src='../images/BEAU.jpg' alt='Logo of Broadview Entertainment Arts University' id='beauImg' />
                     </div>
                 </Container>
