@@ -94,6 +94,7 @@ a:hover {
 
 #homepageReactLink {
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #reactLink {
@@ -104,6 +105,17 @@ a:hover {
 
 #reactLinkLogo {
     margin-left: 5px;
+}
+
+#unDraw {
+    color: #6C63FF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#unDraw:hover {
+    color:  #8e5af0;
+    transition: ease-in 0.5s;
 }
 
 #helloThereDiv {
