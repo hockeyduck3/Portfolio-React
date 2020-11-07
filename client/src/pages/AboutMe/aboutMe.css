@@ -18,6 +18,16 @@
     width: 100%;
 }
 
+#codeThinking {
+    float: right;
+    width: 150px;
+}
+
+.illustrations {
+    float: none;
+    width: 50px;
+}
+
 .text {
     color: black;
     font-size: 16px;
