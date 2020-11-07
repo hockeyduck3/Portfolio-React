@@ -17,9 +17,22 @@
     margin: 30px 25px;
 }
 
+#utahTitle {
+    border-bottom: 1px dotted black;
+    display: flex;
+    flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    padding-bottom: 1%;
+}
+
 .utahPara {
     border-left: 2px dotted black;
     padding-left: 25px;
+    font-size: 25px;
 }
 
 .beauPara {
@@ -28,7 +41,7 @@
 }
 
 @media (max-width: 640px) {
-    #utah {
+    #utah, #utahTitle {
         flex-direction: column;
     }
 
