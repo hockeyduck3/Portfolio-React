@@ -67,6 +67,11 @@ function Nav() {
                         )}
                     </li>
 
+                    {/* Education Link */}
+                    <li className='nav-item'>
+                        <NavLink to='/#education' scroll={el => scrollTo(el.id)} className='nav-link active'>Education</NavLink>
+                    </li>
+
                     {/* Contact Link */}
                     <li className='nav-item'>
                         <NavLink to='/#contact' scroll={el => scrollTo(el.id)} className='nav-link active'>Contact</NavLink>
