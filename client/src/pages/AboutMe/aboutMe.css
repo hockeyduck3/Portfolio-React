@@ -18,6 +18,16 @@
     width: 100%;
 }
 
+#codeThinking {
+    float: right;
+    width: 150px;
+}
+
+.illustrations {
+    float: none;
+    width: 50px;
+}
+
 .text {
     color: black;
     font-size: 16px;
@@ -84,6 +94,7 @@ a:hover {
 
 #homepageReactLink {
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #reactLink {
@@ -94,6 +105,16 @@ a:hover {
 
 #reactLinkLogo {
     margin-left: 5px;
+}
+
+#unDraw {
+    color: #6C63FF;
+    font-weight: bold;
+}
+
+#unDraw:hover {
+    color:  #8e5af0;
+    transition: ease-in 0.5s;
 }
 
 #helloThereDiv {
@@ -126,12 +147,17 @@ a:hover {
         margin: 5px 0px 5px 5px;
     }
 
+    #codeThinking, .illustrations {
+        float: none;
+        width: 100%;
+    }
+
     .text {
-        font-size: 16px;
+        font-size: 19px;
     }
 
     .caption {
-        font-size: 12px;
+        font-size: 13px;
         margin: 15px 0;
     }
 

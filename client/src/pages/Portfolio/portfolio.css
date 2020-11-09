@@ -164,12 +164,6 @@
 
 /* Tablets */
 @media (max-width: 1150px) {
-    .description {
-        margin-left: 69px;
-    }
-}
-
-@media (max-width: 990px) {
     #nonMobile {
         display: none;
     }
@@ -178,6 +172,12 @@
         display: block;
     }
 
+    .description {
+        margin-left: 69px;
+    }
+}
+
+@media (max-width: 990px) {
     .container {
         padding: 10px 50px;
     }
@@ -187,7 +187,7 @@
     }
 
     .mainSection {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .portfolioBigImg {

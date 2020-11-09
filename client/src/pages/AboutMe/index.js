@@ -116,6 +116,8 @@ class AboutMe extends Component {
                                     <div id='textSection' style={{ visibility: 'hidden' }}>
                                         <p className='text'>I'm a Salt Lake City native, and recent Full Stack Web Developer graduate from the University of Utah.</p>
 
+                                        <img id='codeThinking' src='./images/illustrations/undraw_code_thinking_1jeh.png' alt='Develper thinking about code while leaning against a big laptop.' />
+
                                         <p className='text'>My skill set includes HTML, Handlebars, CSS, Bootstrap, Javascript, jQuery, Nodejs, Express, mySQL, MongoDB, Git, and React. (This website was actually built using React.)</p>
 
                                         {window.screen.width < 1024 ? (
@@ -124,7 +126,7 @@ class AboutMe extends Component {
                                             <p className='text'><Link smooth to='/#portfolio' className='homepageLinks'>Click here</Link> to see some of the projects that I have worked on! Or you can just scroll down, I'll leave that choice up to you.</p>
                                         )}
 
-                                        <p className='text'>In my free time I like to go to the movies 🎞, help others with their technology woes, hang out and play games with my friends <span role='img' aria-label='Xbox Controller Emoji'>🎮</span>, tinker with computers and other tech <span role='img' aria-label='Phone Emoji'>📱</span>, and on occasion I'll travel down to Las Vegas to watch some hockey. Go Knights Go! ⚔</p>
+                                        <p className='text'>In my free time I like to go to the movies, <img className='illustrations' src='./images/illustrations/undraw_movie_night_fldd.png' alt='Popcorn, Soda, and 3d glasses.' /> help others with their technology woes, hang out and play games with my friends, <img className='illustrations' src='./images/illustrations/undraw_video_game_night_8h8m.png' alt='Friends hanging out on a giant gaming controller' /> tinker with computers and other tech, <img className='illustrations' src='./images/illustrations/undraw_feeling_proud_qne1.png' alt='Chilling on a desk' /> and on occasion I'll travel down to Las Vegas to watch some hockey. Go Knights Go! ⚔</p>
 
                                         <p className='text'>If you want to know more about me, feel free to reach out to me using my <Link smooth to='/#contact' className='homepageLinks'>Contact card</Link> below!</p>
 

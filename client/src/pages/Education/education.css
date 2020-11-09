@@ -1,0 +1,71 @@
+#utah, #beau {
+    display: flex;
+    flex-direction: row;
+}
+
+#utahImg, #beauImg {
+    margin: 30px 0;
+}
+
+#utahImg {
+    width: 300px;
+}
+
+#beauImg {
+    width: 350px;
+}
+
+.utahPara, .beauPara {
+    margin: 30px 25px;
+}
+
+#utahTitle, #beauTitle {
+    border-bottom: 1px dotted black;
+    display: flex;
+    flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    padding-bottom: 1%;
+}
+
+.utahPara {
+    border-left: 2px dotted black;
+    padding-left: 25px;
+    font-size: 18px;
+}
+
+.beauPara {
+    border-right: 2px dotted black;
+    font-size: 18px;
+    padding-right: 25px;
+}
+
+@media (max-width: 640px) {
+    #utah, #utahTitle, #beauTitle {
+        font-size: 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #utahDate, #beauDate {
+        margin-top: 10px;
+    }
+
+    #beau {
+        flex-direction: column-reverse;
+    }
+
+    #utahImg, #beauImg {
+        margin: 0;
+        width: 100%;
+    }
+
+    .utahPara, .beauPara {
+        border: none;
+        margin: 20px 0 20px 0;
+        padding: 0;
+    }
+}
