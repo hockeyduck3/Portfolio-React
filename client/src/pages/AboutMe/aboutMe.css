@@ -148,12 +148,17 @@ a:hover {
         margin: 5px 0px 5px 5px;
     }
 
+    #codeThinking, .illustrations {
+        float: none;
+        width: 100%;
+    }
+
     .text {
-        font-size: 16px;
+        font-size: 19px;
     }
 
     .caption {
-        font-size: 12px;
+        font-size: 13px;
         margin: 15px 0;
     }
 
