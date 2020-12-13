@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink as NavLink } from 'react-router-hash-link';
 
-import Resume from '../../PDF/LJ-Spencer-Resume-2020.pdf';
+import Resume from '../../PDF/LJ\'s-Resume.pdf';
 import './style.css';
 
 function Nav() {
